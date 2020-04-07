@@ -72,20 +72,30 @@ public class LibraryFileLoader {
      * if no book data has been loaded yet.
      */
     public List<BookEntry> parseFileContent() {
+        int lineCount = 1;
         if (!contentLoaded()){
             System.err.println(NO_CONTENT_LOADED);
             return Collections.emptyList();
         }
         List<BookEntry> books = new ArrayList<>();
         boolean isFirst = true;
-        for (String line:  fileContent){
-           if (isFirst){
-               isFirst = false;
-           }
-           else{
-               addNewBook(line,books);
+        for (String line:  fileContent) {
+            try {
+                if (isFirst) {
+                    isFirst = false;
+                } else {
+
+                    addNewBook(line, books);
+                    lineCount++;
+                }
+            }
+            catch (IllegalArgumentException | NullPointerException e){
+                lineCount++;
+                System.err.println("Error: Could not Load the book in line: "+ lineCount + " possible error in the parameters of the book" );
             }
         }
+
+
         return books;
     }
 
