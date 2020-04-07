@@ -1,5 +1,7 @@
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Class of the command SEARCH that is used to search for a  key value (given by the user) in the title of all the books of the given library data,
@@ -18,11 +20,6 @@ public class SearchCmd extends LibraryCommand{
      * Public String used to initialize an empty String
      */
     public static final String EMPTY_STRING = "";
-    /**
-     * Public int used to denote the length that a given array of strings must have
-     * so that the string formed by the addition of all the array`s elements is considered a single word.
-     */
-    public static final int ONE_WORD = 1;
     /**
      * Private Field that once initialised it will contain the information about the input given by the user
      * if and only if that value is allowed.
@@ -123,6 +120,8 @@ public class SearchCmd extends LibraryCommand{
         if (argumentInput.isBlank()){
             return false;
         }
-            return  argumentInput.split(RemoveCmd.WORDS_SEPARATOR).length == ONE_WORD ;
+        Pattern spaceSearch = Pattern.compile("\\s");
+        Matcher matches = spaceSearch.matcher(argumentInput);
+        return !matches.find();
     }
 }
