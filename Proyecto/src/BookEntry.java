@@ -6,14 +6,41 @@ import java.util.Objects;
  * Immutable class encapsulating data for a single book entry.
  */
 public final class BookEntry {
+    /**
+     * Private constant tha is used to define the minimum rating that a BookEntry can have.
+     */
     public static final int MIN_RATING = 0;
+    /**
+     * Private constant tha is used to define the maximum rating that a BookEntry can have.
+     */
     public static final int MAX_RATING = 5;
+    /**
+     * Private constant (String) used to define the separation between the different authors when printed.
+     */
     public static final String AUTHORS_SEPARATOR = ", ";
+    /**
+     * Private constant (String) used to define a new line.
+     */
     public static final String BLANK_LINE = "\n";
+    /**
+     * Private constant (String) used to introduce the Rating field when printing a Book entry.
+     */
     public static final String PRINT_RATING = "Rating: ";
+    /**
+     * Private constant (String) used to introduce the ISBN field when printing a Book entry.
+     */
     public static final String PRINT_ISBN = "ISBN: ";
+    /**
+     * Private constant (String) used to introduce the pages field when printing a Book entry.
+     */
     public static final String PRINT_PAGES = " pages";
+    /**
+     * Private constant (String) used to introduce the Authors field when printing a Book entry.
+      */
     public static final String BY_AUTHORS = "by ";
+    /**
+     * Private constant (String) used to define the number of decimals of the rating when printing a BookEntry.
+     */
     public static final String FORMAT_NUMBER_OF_DECIMALS = "%.2f";
     /**
      * Private field that is used to store the information about the number of pages of a Book
