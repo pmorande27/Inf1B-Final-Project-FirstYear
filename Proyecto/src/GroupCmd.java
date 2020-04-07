@@ -169,7 +169,7 @@ public class GroupCmd extends LibraryCommand {
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Objects.requireNonNull(argumentInput);
+        super.parseArguments(argumentInput);
         return parseCommandOption(argumentInput.strip());
     }
 

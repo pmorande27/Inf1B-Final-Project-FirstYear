@@ -6,6 +6,7 @@ public class Exceptions extends Exception {
     public static final String NUll_EXCEPTION_MESSAGE = "Given object must not be null";
     public static final String ERROR_IN_PARSING_MESSAGE = "Argument Input parsed Incorrectly";
     public static final String ERROR_MESSAGE_PAGES = "The Number of pages must not be negative!";
+    public static final String NUll_DATA_EXCEPTION_MESSAGE ="Given Library data must not be null";
 
     private Exceptions() {
     }

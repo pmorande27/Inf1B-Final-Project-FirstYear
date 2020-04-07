@@ -58,7 +58,7 @@ public class SearchAuthorCmd extends LibraryCommand {
 
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Objects.requireNonNull(argumentInput);
+        super.parseArguments(argumentInput);
         if(argumentInput.isBlank()){
             return false;
 

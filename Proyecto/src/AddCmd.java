@@ -35,7 +35,7 @@ public class AddCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-       Objects.requireNonNull(data);
+       Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
         Objects.requireNonNull(parsedArgument);
        data.loadData(parsedArgument);
     }
@@ -51,7 +51,7 @@ public class AddCmd extends LibraryCommand {
 
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Objects.requireNonNull(argumentInput);
+        super.parseArguments(argumentInput);
         if (argumentInput.strip().endsWith(CSV_EXTENSION)) {
             parsedArgument = Path.of(argumentInput.strip());
             return true;

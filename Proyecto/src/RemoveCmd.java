@@ -145,8 +145,7 @@ public class RemoveCmd extends LibraryCommand {
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
-
-        Objects.requireNonNull(argumentInput);
+        super.parseArguments(argumentInput);
         String[] twoArguments = argumentInput.strip().split(WORDS_SEPARATOR, 2);
        return checkValidity(twoArguments);
     }

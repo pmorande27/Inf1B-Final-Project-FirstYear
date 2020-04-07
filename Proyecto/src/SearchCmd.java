@@ -102,7 +102,7 @@ public class SearchCmd extends LibraryCommand{
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Objects.requireNonNull(argumentInput);
+        super.parseArguments(argumentInput);
         if(singleWord(argumentInput.strip())){
             this.parsedArgument = argumentInput.strip();
             return true;
