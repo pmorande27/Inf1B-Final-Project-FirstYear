@@ -44,7 +44,7 @@ public final class BookEntry {
      * @param rating Float that describes the rating of the book, must be within the accepted range (between 0 and 5).
      * @param ISBN String that describes the ISBN number of the book.
      * @param pages int that describes the number of pages of the book.
-     * @throws NullPointerException if a member of the parameter authors is null or if the parameters name or ISBN are null
+     * @throws NullPointerException if a member of the parameter authors is null or if the parameters name or ISBN are null.
      * @throws IllegalArgumentException if the rating is not within the accepted range, uses the method checkRating for it.
      */
 
@@ -182,7 +182,7 @@ public final class BookEntry {
         return result.toString();
     }
     /**
-     * private method that is used in the constructor of BookEntry.
+     * Private method that is used in the constructor of BookEntry.
      * It is used to determine if the parameter rating is within the accepted range of values. (0.0 -5.0).
      *
      * @param rating Float that describes the rating of a given book
@@ -194,11 +194,11 @@ public final class BookEntry {
         }
     }
     /**
-     * private method that is used in the constructor of BookEntry.
+     * Private method that is used in the constructor of BookEntry.
      * It is used to determine if one of the elements of an Array of Strings is null (if one of the elements in the Array of authors is null)
      *
      * @param authors Array of Strings that contains the information regarding
-     *
+     * @throws NullPointerException if one of the members of authors is null.
      */
 
     public static void isMemberNull(String[] authors) {
@@ -207,18 +207,27 @@ public final class BookEntry {
         }
     }
     /**
-     * Public method that is in the constructor of BookEntry
+     * Private method that is in the constructor of BookEntry
      * It is used to determine if any of the given parameters is null
      *
      * @param name String that describes the title of the book.
      * @param authors Array of Strings that contains all the information regarding the author(s) of the book.
      * @param ISBN String that describes the ISBN number of the book.
+     * @throws NullPointerException if any of the given parameters is null
      */
     public static void isNullConstructorParameter(String name, String[] authors, String ISBN) {
         Objects.requireNonNull(name, ExceptionsMessages.NUll_EXCEPTION_MESSAGE);
         Objects.requireNonNull(authors, ExceptionsMessages.NUll_EXCEPTION_MESSAGE);
         Objects.requireNonNull(ISBN, ExceptionsMessages.NUll_EXCEPTION_MESSAGE);
     }
+
+    /**
+     * Private method that is used in the constructor of BookEntry.
+     * It is used to check if the given number of pages of a Book is not a negative number
+     *
+     * @param pages Number of pages of a Book
+     * @throws IllegalArgumentException if the given number of pages is negative.
+     */
     public static void checkPages(int pages){
         if (pages<0){
             throw new IllegalArgumentException(ExceptionsMessages.ERROR_MESSAGE_PAGES);

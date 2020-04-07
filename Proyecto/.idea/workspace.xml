@@ -2,81 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19f605b-7c99-4eb6-bc8d-4ef628357939" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/BookEntryBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/BookEntryBasicTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/BookEntryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/BookEntryTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Doc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/CHANGELOG.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/booksTestData01.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/inf1b-cw3_v0.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/papers/assignment-partIII_v0.1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/AddCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/BookEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/CommandFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/CommandInterpreter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/CommandOptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/CommandOptionsList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/CommandType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/Exceptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/ExitCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/GroupCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/HelpCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/LibraryBrowser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/LibraryCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/LibraryData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/LibraryFileLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/ListCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/RemoveCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/SearchAuthorCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/templates/SearchCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/AddCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/BookEntryBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/BookEntryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/BookEntryTestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/CommandTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/CommandTestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/FieldTestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/GroupCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/GroupCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/LibraryFileLoaderBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/LibraryFileLoaderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/ListCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/ListCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/RemoveCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/RemoveCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/SearchCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/SearchCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1/tests/StdStreamIntercept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookEntryBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookEntryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookEntryTestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommandTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommandTestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FieldTestUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LibraryFileLoaderBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LibraryFileLoaderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RemoveCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RemoveCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchCmdBasicTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchCmdTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StdStreamIntercept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StdStreamIntercept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExceptionsMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExceptionsMessages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +33,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pmorande27\Desktop\Proyecto Informática\Inf1B-Final-Project-FirstYear\Proyecto" />
       <recent name="C:\Users\Pmorande27\Desktop\Proyecto Informática\Inf1B-Final-Project-FirstYear\Proyecto\src" />
     </key>
   </component>
@@ -173,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586271969334</updated>
       <workItem from="1586271971268" duration="34000" />
-      <workItem from="1586272086111" duration="4749000" />
+      <workItem from="1586272086111" duration="5572000" />
     </task>
     <servers />
   </component>
