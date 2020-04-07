@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="319c0e42-efd0-4552-bdde-9d7ccadf5294" name="Default Changelist" comment="" />
+    <list default="true" id="bd68262e-7ccd-429d-bf6c-5d8d8ce5ebb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inf1b-cw3_v0.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/inf1b-cw3_v0.1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/inf1b-cw3_v0.1/META-INF/inf1b-cw3_v0.1.kotlin_module" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1YuCEid34QiuB5VNIVAy7MtNhIx" />
+  <component name="ProjectId" id="1aDXv42RK7ct89GXLUlI5f89wBm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,18 +31,16 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Pablo Morandé\Desktop\inf1b-cw3_v0.1" />
-      <recent name="C:\Users\Pablo Morandé\Desktop\inf1b-cw3_v0.1\inf1b-cw3_v0.1" />
-      <recent name="C:\Users\Pablo Morandé\Desktop\inf1b-cw3_v0.1\inf1b-cw3_v0.1\tests" />
-      <recent name="C:\Users\Pablo Morandé\Desktop\inf1b-cw3_v0.1\inf1b-cw3_v0.1\templates" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="inf1b-cw3_v0.1" />
@@ -46,233 +48,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddCmdBasicTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="inf1b-cw3_v0.1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommandTest" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="AddCmdBasicTest" />
-        <pattern testClass="GroupCmdBasicTest" />
-        <pattern testClass="ListCmdBasicTest" />
-        <pattern testClass="RemoveCmdBasicTest" />
-        <pattern testClass="SearchCmdBasicTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListCmdBasicTest.testParseArgumentsLegalArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="inf1b-cw3_v0.1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ListCmdBasicTest" />
-      <option name="METHOD_NAME" value="testParseArgumentsLegalArgument" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchCmdBasicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="inf1b-cw3_v0.1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchCmdBasicTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchCmdBasicTest.testParseArgumentsLegalArgument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="inf1b-cw3_v0.1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchCmdBasicTest" />
-      <option name="METHOD_NAME" value="testParseArgumentsLegalArgument" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
-        <item itemvalue="JUnit.SearchCmdBasicTest" />
-        <item itemvalue="JUnit.SearchCmdBasicTest.testParseArgumentsLegalArgument" />
-        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="319c0e42-efd0-4552-bdde-9d7ccadf5294" name="Default Changelist" comment="" />
-      <created>1583782982495</created>
+      <changelist id="bd68262e-7ccd-429d-bf6c-5d8d8ce5ebb2" name="Default Changelist" comment="" />
+      <created>1586271365695</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583782982495</updated>
+      <updated>1586271365695</updated>
+      <workItem from="1586271368129" duration="284000" />
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="164" y="403" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585048648005">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="164" y="403" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585048648005" />
-    <state x="599" y="208" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1584292948541">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="599" y="208" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584292948541" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1585068199013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585068199013" />
-    <state x="664" y="204" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1584617108462">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="664" y="204" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584617108462" />
-    <state x="756" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585860025508">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="756" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1585860025508" />
-    <state x="753" y="351" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1583972283373">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="753" y="351" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583972283373" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583789907056">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583789907056" />
-    <state x="803" y="433" key="#com.intellij.refactoring.turnRefsToSuper.TurnRefsToSuperDialog" timestamp="1584617099157">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="803" y="433" key="#com.intellij.refactoring.turnRefsToSuper.TurnRefsToSuperDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584617099157" />
-    <state x="718" y="383" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585394181634">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="718" y="383" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1585394181634" />
-    <state x="740" y="399" key="FileChooserDialogImpl" timestamp="1584826376914">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="399" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584826376913" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1585935540862">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585935540862" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1585935540861">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585935540861" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1585935540861">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585935540861" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1585935540861">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585935540861" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585567283289">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585567283289" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1585567283289">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585567283289" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1585567283288">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585567283288" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1585567283289">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585567283289" />
-    <state x="656" y="345" width="607" height="349" key="com.intellij.ide.util.TipDialog" timestamp="1585907482015">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="345" width="607" height="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585907482015" />
-    <state x="664" y="414" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584617015286">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="664" y="414" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1584617015286" />
-    <state x="690" y="290" key="extract.method.dialog" timestamp="1585310987831">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="290" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585310987831" />
-    <state x="342" y="141" key="new project wizard" timestamp="1585858532978">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="342" y="141" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585858532978" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1585859951382">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585859951382" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585397316828">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585397316828" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/inf1b-cw3_v0.1/tests/AddCmdBasicTest.java</url>
-          <line>48</line>
-          <properties class="AddCmdBasicTest" method="testExecuteLoadData">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/inf1b-cw3_v0.1/tests/GroupCmdBasicTest.java</url>
-          <line>73</line>
-          <properties class="GroupCmdBasicTest" method="testExecuteGroupByAuthorGroups">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/inf1b-cw3_v0.1/tests/GroupCmdBasicTest.java</url>
-          <line>34</line>
-          <properties class="GroupCmdBasicTest" method="testExecuteEmptyBookData">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/inf1b-cw3_v0.1/tests/ListCmdBasicTest.java</url>
-          <line>12</line>
-          <properties class="ListCmdBasicTest" method="testParseArgumentsLegalArgument">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/inf1b-cw3_v0.1/tests/SearchCmdBasicTest.java</url>
-          <line>16</line>
-          <properties class="SearchCmdBasicTest" method="testParseArgumentsLegalArgument">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/inf1b-cw3_v0.1/tests/CommandTest.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1586271372756">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1586271372756" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1586271651238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586271651238" />
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586271504279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1586271504279" />
   </component>
 </project>
