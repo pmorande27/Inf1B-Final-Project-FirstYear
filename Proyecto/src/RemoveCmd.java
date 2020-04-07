@@ -67,9 +67,9 @@ public class RemoveCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Objects.requireNonNull(data);
-        Objects.requireNonNull(command);
-        Objects.requireNonNull(value);
+        Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(command,Exceptions.ERROR_IN_PARSING_MESSAGE);
+        Objects.requireNonNull(value,Exceptions.ERROR_IN_PARSING_MESSAGE);
         List<BookEntry> books = data.getBookData();
         if (books.isEmpty()) {
             System.out.println(NO_BOOK_ENTRIES);

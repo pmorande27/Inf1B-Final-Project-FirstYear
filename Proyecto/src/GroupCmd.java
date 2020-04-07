@@ -45,8 +45,8 @@ public class GroupCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Objects.requireNonNull(data);
-        Objects.requireNonNull(this.command);
+        Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(this.command,Exceptions.ERROR_IN_PARSING_MESSAGE);
         List<BookEntry> books = data.getBookData();
         if (books.isEmpty()) {
             System.out.println(ListCmd.NO_BOOK_ENTRIES);

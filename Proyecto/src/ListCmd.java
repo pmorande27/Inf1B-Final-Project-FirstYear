@@ -51,8 +51,8 @@ public class ListCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Objects.requireNonNull(data);
-        Objects.requireNonNull(command);
+        Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(command,Exceptions.ERROR_IN_PARSING_MESSAGE);
         List<BookEntry> books = data.getBookData();
 
         if (isNotEmptyBooks(books)){

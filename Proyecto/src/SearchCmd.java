@@ -47,8 +47,8 @@ public class SearchCmd extends LibraryCommand{
      */
     @Override
     public void execute(LibraryData data) {
-        Objects.requireNonNull(data);
-        Objects.requireNonNull(parsedArgument);
+        Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(parsedArgument,Exceptions.ERROR_IN_PARSING_MESSAGE);
         searchExecute(data.getBookData());
 
     }
