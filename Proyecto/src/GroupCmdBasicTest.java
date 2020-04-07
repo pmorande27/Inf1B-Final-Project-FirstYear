@@ -78,4 +78,3 @@ public class GroupCmdBasicTest extends GroupCmdTest {
         checkGroupOutputOrder(executeStdOutLines, expectedGroups);
     }
 }
-

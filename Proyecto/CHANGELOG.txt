@@ -1,0 +1,15 @@
+-------------------------------------------------------
+v0.2
+-------------------------------------------------------
+- Fixed a mistake in the paper. The field name for the title
+of a book should be "title".
+See here: https://piazza.com/class/jyszupso6zq5f1?cid=428
+- Added a specification for the message to be printed if no
+matching author was found for the REMOVE command.
+See here: https://piazza.com/class/jyszupso6zq5f1?cid=429
+
+-------------------------------------------------------
+v0.1
+-------------------------------------------------------
+
+- first release

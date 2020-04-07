@@ -24,6 +24,7 @@ public class LibraryFileLoaderBasicTest extends LibraryFileLoaderTest {
 
         checkBookCollectionResult(testBookData, expectedValues);
     }
+
     @Test
     public void testParseFileContentNoContentLoadedConsoleOutput() {
         testFileLoader = new LibraryFileLoader();

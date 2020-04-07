@@ -58,4 +58,3 @@ public abstract class GroupCmdTest extends CommandTest {
         assertEquals("Groups not printed in expected order.", expectedGroups, actualGroups);
     }
 }
-

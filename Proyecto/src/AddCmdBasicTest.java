@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class AddCmdBasicTest extends CommandTest {
 
-    private static final String TEST_PATH = "inf1b-cw3_v0.1/booksTestData01.csv";
+    private static final String TEST_PATH = "booksTestData01.csv";
 
     @Override
     protected CommandType getCmdType() {
@@ -21,7 +21,7 @@ public class AddCmdBasicTest extends CommandTest {
 
         testLibrary = new LibraryData();
         List<BookEntry> bookData = new ArrayList<>();
-        bookData.add(new BookEntry("TitleA", new String[] { "AuthorA" }, 3.2f, "ISBN", 500));
+        bookData.add(new BookEntry("TitleA", new String[] { "AuthorA" }, 3.2f, "ISBNA", 500));
         FieldTestUtils.setPrivateField(testLibrary, testLibrary.getClass(), "books", bookData);
     }
 
@@ -54,7 +54,7 @@ public class AddCmdBasicTest extends CommandTest {
         assertEquals("Unexpected amount of books in library after loading file.", expectedBookAmount, books.size());
 
         List<Object[]> expectedBookValues = new ArrayList<>();
-        expectedBookValues.add(new Object[] { "TitleA", new String[] { "AuthorA" }, 3.2f, "ISBN", 500 });
+        expectedBookValues.add(new Object[] { "TitleA", new String[] { "AuthorA" }, 3.2f, "ISBNA", 500 });
         expectedBookValues.add(
                 new Object[] { "The Changeling", new String[] { "Zilpha Keatley Snyder" }, 4.17f, "595321801", 228 });
         expectedBookValues.add(

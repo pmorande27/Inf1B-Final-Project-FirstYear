@@ -23,23 +23,6 @@ public class ListCmdBasicTest extends ListCmdTest {
         String expectedConsoleOutput = "3 books in library:\nTitleA\nTitleB\nTitleC";
         CommandTestUtils.checkExecuteConsoleOutput(testCommand, testLibrary, expectedConsoleOutput);
     }
-    @Test
-    public void  testExecuteNoBooksLong(){
-        LibraryData test= new  LibraryData();
-
-        testCommand= new ListCmd(LONG_ARGUMENT);
-        String expectedConsoleOutput = " The library has no book entries.\n";
-        CommandTestUtils.checkExecuteConsoleOutput(testCommand, test, expectedConsoleOutput);
-
-    }
-    @Test
-    public void testExecuteNoBooksShort(){
-        LibraryData test= new  LibraryData();
-
-        testCommand= new ListCmd(SHORT_ARGUMENT);
-        String expectedConsoleOutput = " The library has no book entries.\n";
-        CommandTestUtils.checkExecuteConsoleOutput(testCommand, test, expectedConsoleOutput);
-    }
 
     @Test
     public void testExecuteLongList() {
@@ -66,4 +49,3 @@ public class ListCmdBasicTest extends ListCmdTest {
         CommandTestUtils.checkExecuteConsoleOutput(testCommand, testLibrary, expectedConsoleOutput);
     }
 }
-

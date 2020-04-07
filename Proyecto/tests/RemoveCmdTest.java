@@ -65,5 +65,3 @@ public abstract class RemoveCmdTest extends CommandTest {
     }
 
 }
-
-

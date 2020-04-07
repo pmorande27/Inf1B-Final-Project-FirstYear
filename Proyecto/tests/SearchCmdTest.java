@@ -30,4 +30,3 @@ public abstract class SearchCmdTest extends CommandTest {
         FieldTestUtils.setPrivateField(testLibrary, testLibrary.getClass(), "books", bookData);
     }
 }
-
