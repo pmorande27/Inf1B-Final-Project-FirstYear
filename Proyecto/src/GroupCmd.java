@@ -152,7 +152,8 @@ public class GroupCmd extends LibraryCommand {
     private void executePrinting(HashMap<String, List<String>> groupedData, List<String> keys) {
         for (String key : keys) {
             System.out.println( GROUP_HEADER +key);
-            for (String title: groupedData.get(key)){
+            Collections.sort(groupedData.get(key));
+            for (String title:groupedData.get(key)){
                 System.out.println(title);
             }
         }
