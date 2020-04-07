@@ -190,7 +190,7 @@ public final class BookEntry {
      */
     private  void checkRating(float rating) {
         if (rating < MIN_RATING || rating > MAX_RATING){
-            throw new IllegalArgumentException(Exceptions.INVALID_RATING_MESSAGE);
+            throw new IllegalArgumentException(ExceptionsMessages.INVALID_RATING_MESSAGE);
         }
     }
     /**
@@ -203,7 +203,7 @@ public final class BookEntry {
 
     public static void isMemberNull(String[] authors) {
         for (String author : authors){
-            Objects.requireNonNull(author, Exceptions.NULL_MEMBERS_MESSAGE);
+            Objects.requireNonNull(author, ExceptionsMessages.NULL_MEMBERS_MESSAGE);
         }
     }
     /**
@@ -215,13 +215,13 @@ public final class BookEntry {
      * @param ISBN String that describes the ISBN number of the book.
      */
     public static void isNullConstructorParameter(String name, String[] authors, String ISBN) {
-        Objects.requireNonNull(name,Exceptions.NUll_EXCEPTION_MESSAGE);
-        Objects.requireNonNull(authors,Exceptions.NUll_EXCEPTION_MESSAGE);
-        Objects.requireNonNull(ISBN,Exceptions.NUll_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(name, ExceptionsMessages.NUll_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(authors, ExceptionsMessages.NUll_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(ISBN, ExceptionsMessages.NUll_EXCEPTION_MESSAGE);
     }
     public static void checkPages(int pages){
         if (pages<0){
-            throw new IllegalArgumentException(Exceptions.ERROR_MESSAGE_PAGES);
+            throw new IllegalArgumentException(ExceptionsMessages.ERROR_MESSAGE_PAGES);
         }
     }
 }

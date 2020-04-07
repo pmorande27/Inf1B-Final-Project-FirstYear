@@ -22,8 +22,8 @@ public class SearchAuthorCmd extends LibraryCommand {
 
     @Override
     public void execute(LibraryData data) {
-        Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
-        Objects.requireNonNull(author,Exceptions.ERROR_IN_PARSING_MESSAGE);
+        Objects.requireNonNull(data, ExceptionsMessages.NUll_DATA_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(author, ExceptionsMessages.ERROR_IN_PARSING_MESSAGE);
         ArrayList<String> result = new ArrayList<>();
         for (BookEntry book: data.getBookData()){
             if (isAuthor(author,book)){

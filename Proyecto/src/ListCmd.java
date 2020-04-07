@@ -51,8 +51,8 @@ public class ListCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
-        Objects.requireNonNull(command,Exceptions.ERROR_IN_PARSING_MESSAGE);
+        Objects.requireNonNull(data, ExceptionsMessages.NUll_DATA_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(command, ExceptionsMessages.ERROR_IN_PARSING_MESSAGE);
         List<BookEntry> books = data.getBookData();
 
         if (isNotEmptyBooks(books)){
@@ -83,7 +83,7 @@ public class ListCmd extends LibraryCommand {
                     System.out.println(book + BLANK_LINE);
                     break;
                 default:
-                    throw new IllegalArgumentException(Exceptions.ERROR_IN_PARSING_MESSAGE);
+                    throw new IllegalArgumentException(ExceptionsMessages.ERROR_IN_PARSING_MESSAGE);
                 }
             }
         }

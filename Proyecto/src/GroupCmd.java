@@ -45,8 +45,8 @@ public class GroupCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Objects.requireNonNull(data,Exceptions.NUll_DATA_EXCEPTION_MESSAGE);
-        Objects.requireNonNull(this.command,Exceptions.ERROR_IN_PARSING_MESSAGE);
+        Objects.requireNonNull(data, ExceptionsMessages.NUll_DATA_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(this.command, ExceptionsMessages.ERROR_IN_PARSING_MESSAGE);
         List<BookEntry> books = data.getBookData();
         if (books.isEmpty()) {
             System.out.println(ListCmd.NO_BOOK_ENTRIES);
@@ -77,7 +77,7 @@ public class GroupCmd extends LibraryCommand {
                     executeGroupByTitle(groupedData, book);
                     break;
                 default:
-                    throw new IllegalArgumentException(Exceptions.ERROR_IN_PARSING_MESSAGE);
+                    throw new IllegalArgumentException(ExceptionsMessages.ERROR_IN_PARSING_MESSAGE);
             }
         }
             List<String> keys = new ArrayList<>(groupedData.keySet());
