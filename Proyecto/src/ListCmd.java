@@ -1,5 +1,7 @@
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
+
 /**
  * Class for the Command LIST. This command is used to print all the books contained in a LibraryData,
  * it has two formats: short, which includes only the titles of the books in the printing
@@ -49,8 +51,8 @@ public class ListCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Exceptions.isNull(data);
-        Exceptions.isNull(command);
+        Objects.requireNonNull(data);
+        Objects.requireNonNull(command);
         List<BookEntry> books = data.getBookData();
 
         if (isNotEmptyBooks(books)){
@@ -109,7 +111,7 @@ public class ListCmd extends LibraryCommand {
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Exceptions.isNull(argumentInput);
+        Objects.requireNonNull(argumentInput);
         return parseCommandOption(argumentInput.strip());
     }
 

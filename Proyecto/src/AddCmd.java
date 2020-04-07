@@ -1,4 +1,5 @@
 import java.nio.file.Path;
+import java.util.Objects;
 
 /**
  * Class for the Command ADD. It is used to add a database (of ending csv) containing information about BookEntries to a LibraryData.
@@ -34,8 +35,8 @@ public class AddCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-       Exceptions.isNull(data);
-       Exceptions.isNull(parsedArgument);
+       Objects.requireNonNull(data);
+        Objects.requireNonNull(parsedArgument);
        data.loadData(parsedArgument);
     }
 
@@ -50,7 +51,7 @@ public class AddCmd extends LibraryCommand {
 
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Exceptions.isNull(argumentInput);
+        Objects.requireNonNull(argumentInput);
         if (argumentInput.strip().endsWith(CSV_EXTENSION)) {
             parsedArgument = Path.of(argumentInput.strip());
             return true;

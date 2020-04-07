@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Class of the command Remove. It is used to remove a book from the Library.
@@ -66,9 +67,9 @@ public class RemoveCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Exceptions.isNull(data);
-        Exceptions.isNull(command);
-        Exceptions.isNull(value);
+        Objects.requireNonNull(data);
+        Objects.requireNonNull(command);
+        Objects.requireNonNull(value);
         List<BookEntry> books = data.getBookData();
         if (books.isEmpty()) {
             System.out.println(NO_BOOK_ENTRIES);
@@ -145,7 +146,7 @@ public class RemoveCmd extends LibraryCommand {
     @Override
     protected boolean parseArguments(String argumentInput) {
 
-        Exceptions.isNull(argumentInput);
+        Objects.requireNonNull(argumentInput);
         String[] twoArguments = argumentInput.strip().split(WORDS_SEPARATOR, 2);
        return checkValidity(twoArguments);
     }

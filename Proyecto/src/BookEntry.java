@@ -6,7 +6,8 @@ import java.util.Objects;
  * Immutable class encapsulating data for a single book entry.
  */
 public final class BookEntry {
-
+    public static final int MIN_RATING = 0;
+    public static final int MAX_RATING = 5;
     public static final String AUTHORS_SEPARATOR = ", ";
     public static final String BLANK_LINE = "\n";
     public static final String PRINT_RATING = "Rating: ";
@@ -48,10 +49,10 @@ public final class BookEntry {
      */
 
     public BookEntry(String name, String[] authors, float rating , String ISBN, int pages){
-        Exceptions.isNullConstructorParameter(name,authors,ISBN);
-        Exceptions.isMemberNull(authors);
-        Exceptions.checkRating(rating);
-        Exceptions.checkPages(pages);
+        isNullConstructorParameter(name,authors,ISBN);
+        isMemberNull(authors);
+        checkRating(rating);
+        checkPages(pages);
         this.pages = pages;
         this.title = name;
         this.authors = authors.clone();
@@ -105,7 +106,6 @@ public final class BookEntry {
      */
 
     public String getISBN() {
-        Exceptions.isNullConstructorParameter(this.title,this.authors,this.ISBN);
         return ISBN;
     }
 
@@ -180,5 +180,48 @@ public final class BookEntry {
             }
         }
         return result.toString();
+    }
+    /**
+     * private method that is used in the constructor of BookEntry.
+     * It is used to determine if the parameter rating is within the accepted range of values. (0.0 -5.0).
+     *
+     * @param rating Float that describes the rating of a given book
+     * @throws IllegalArgumentException if the rating is not within the accepted range.
+     */
+    private  void checkRating(float rating) {
+        if (rating < MIN_RATING || rating > MAX_RATING){
+            throw new IllegalArgumentException(Exceptions.INVALID_RATING_MESSAGE);
+        }
+    }
+    /**
+     * private method that is used in the constructor of BookEntry.
+     * It is used to determine if one of the elements of an Array of Strings is null (if one of the elements in the Array of authors is null)
+     *
+     * @param authors Array of Strings that contains the information regarding
+     *
+     */
+
+    public static void isMemberNull(String[] authors) {
+        for (String author : authors){
+            Objects.requireNonNull(author, Exceptions.NULL_MEMBERS_MESSAGE);
+        }
+    }
+    /**
+     * Public method that is in the constructor of BookEntry
+     * It is used to determine if any of the given parameters is null
+     *
+     * @param name String that describes the title of the book.
+     * @param authors Array of Strings that contains all the information regarding the author(s) of the book.
+     * @param ISBN String that describes the ISBN number of the book.
+     */
+    public static void isNullConstructorParameter(String name, String[] authors, String ISBN) {
+        Objects.requireNonNull(name,Exceptions.NUll_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(authors,Exceptions.NUll_EXCEPTION_MESSAGE);
+        Objects.requireNonNull(ISBN,Exceptions.NUll_EXCEPTION_MESSAGE);
+    }
+    public static void checkPages(int pages){
+        if (pages<0){
+            throw new IllegalArgumentException(Exceptions.ERROR_MESSAGE_PAGES);
+        }
     }
 }

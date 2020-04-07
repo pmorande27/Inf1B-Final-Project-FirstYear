@@ -1,8 +1,4 @@
-import java.util.List;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Collections;
+import java.util.*;
 
 /**
  * Class for Command Group, this command is to print all the books of a Library grouped by author or title, depending on the modality chosen by the author (with the command).
@@ -49,8 +45,8 @@ public class GroupCmd extends LibraryCommand {
      */
     @Override
     public void execute(LibraryData data) {
-        Exceptions.isNull(data);
-        Exceptions.isNull(this.command);
+        Objects.requireNonNull(data);
+        Objects.requireNonNull(this.command);
         List<BookEntry> books = data.getBookData();
         if (books.isEmpty()) {
             System.out.println(ListCmd.NO_BOOK_ENTRIES);
@@ -173,7 +169,7 @@ public class GroupCmd extends LibraryCommand {
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Exceptions.isNull(argumentInput);
+        Objects.requireNonNull(argumentInput);
         return parseCommandOption(argumentInput.strip());
     }
 

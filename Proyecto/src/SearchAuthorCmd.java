@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Objects;
 
 public class SearchAuthorCmd extends LibraryCommand {
     public static final String NO_BOOKS_FOUND = "No book found for the author: ";
@@ -21,8 +22,8 @@ public class SearchAuthorCmd extends LibraryCommand {
 
     @Override
     public void execute(LibraryData data) {
-        Exceptions.isNull(data);
-        Exceptions.isNull(author);
+        Objects.requireNonNull(data);
+        Objects.requireNonNull(author);
         ArrayList<String> result = new ArrayList<>();
         for (BookEntry book: data.getBookData()){
             if (isAuthor(author,book)){
@@ -57,7 +58,7 @@ public class SearchAuthorCmd extends LibraryCommand {
 
     @Override
     protected boolean parseArguments(String argumentInput) {
-        Exceptions.isNull(argumentInput);
+        Objects.requireNonNull(argumentInput);
         if(argumentInput.isBlank()){
             return false;
 

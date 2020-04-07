@@ -1,5 +1,6 @@
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -46,8 +47,8 @@ public class SearchCmd extends LibraryCommand{
      */
     @Override
     public void execute(LibraryData data) {
-        Exceptions.isNull(data);
-        Exceptions.isNull(parsedArgument);
+        Objects.requireNonNull(data);
+        Objects.requireNonNull(parsedArgument);
         searchExecute(data.getBookData());
 
     }
@@ -101,7 +102,7 @@ public class SearchCmd extends LibraryCommand{
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
-       Exceptions.isNull(argumentInput);
+        Objects.requireNonNull(argumentInput);
         if(singleWord(argumentInput.strip())){
             this.parsedArgument = argumentInput.strip();
             return true;
