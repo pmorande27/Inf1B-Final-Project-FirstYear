@@ -39,7 +39,7 @@ public abstract class CommandTest {
         CommandTestUtils.checkIfParseArgumentsIsOverridden(testCommand);
     }
 
-    // ------------------------- execute tests --------------------
+    //-------------------------Exception tests--------------------------
 
     @Test(expected = NullPointerException.class)
     public void testExecuteLibraryDataNull() {

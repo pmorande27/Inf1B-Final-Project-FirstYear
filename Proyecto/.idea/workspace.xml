@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f19f605b-7c99-4eb6-bc8d-4ef628357939" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LibraryFileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LibraryFileLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchAuthorCmd.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../inf1b-cw3_v0.2/templates" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -63,7 +65,14 @@
       <recent name="C:\Users\Pmorande27\Desktop\Proyecto Informática\Inf1B-Final-Project-FirstYear\Proyecto\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddCmdBasicTest and 4 more">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Proyecto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddCmdBasicTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyecto" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,15 +85,6 @@
         <pattern testClass="RemoveCmdBasicTest" />
         <pattern testClass="SearchCmdBasicTest" />
       </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddCmdBasicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddCmdBasicTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
+        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
         <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
         <item itemvalue="JUnit.GroupCmdBasicTest" />
-        <item itemvalue="JUnit.SearchCmdBasicTest" />
-        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
-        <item itemvalue="JUnit.AddCmdBasicTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +142,7 @@
       <workItem from="1586341387097" duration="466000" />
       <workItem from="1586341864129" duration="7535000" />
       <workItem from="1586352894108" duration="229000" />
-      <workItem from="1586357561506" duration="396000" />
+      <workItem from="1586357561506" duration="2178000" />
     </task>
     <servers />
   </component>
@@ -158,6 +158,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1586275926891" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586363605431">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586363605431" />
     <state x="707" y="234" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586278715366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,26 +170,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="428" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1586276270235" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586341940494">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586363380317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586341940494" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586352556277">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586363380317" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586363630717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586352556277" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586352556276">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586363630717" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586363630717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586352556276" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586352556276">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586363630717" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586363630717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586352556276" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586352556276">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586363630717" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586363630717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586352556276" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586363630717" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586276913366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -222,11 +226,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CommandTest.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>10</line>

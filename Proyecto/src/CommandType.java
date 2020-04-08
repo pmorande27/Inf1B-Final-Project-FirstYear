@@ -7,6 +7,5 @@ public enum CommandType {
     LIST,
     REMOVE,
     GROUP,
-    SEARCHAUTHOR,
 }
 
