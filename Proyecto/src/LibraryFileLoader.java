@@ -99,6 +99,13 @@ public class LibraryFileLoader {
         return books;
     }
 
+    /**
+     * Private method used to create a new book from the received line, it also adds this to a given list of books.
+     *
+     * @param line given String that contains all the information required to create a BookEntry, separated by commas.
+     * @param books given List that contains BookEntries.
+     */
+
     private void addNewBook(String line, List<BookEntry> books) {
         String[] lineComponents  = line.split(ARGUMENT_SEPARATOR);
         String title= lineComponents[0];

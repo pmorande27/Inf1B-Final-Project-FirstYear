@@ -81,7 +81,6 @@ public class GroupCmd extends LibraryCommand {
             }
         }
             List<String> keys = new ArrayList<>(groupedData.keySet());
-
             Collections.sort(keys);
             System.out.println(DATA_BY + command.toString());
             executePrinting(groupedData, keys);
@@ -141,8 +140,6 @@ public class GroupCmd extends LibraryCommand {
         }
 
     }
-
-
     /**
      * Private Method that is used in execute.
      * This method is used to print all the contents in of a HashMap, taking into account the order given by the List of keys (that has been previously ordered)
@@ -151,7 +148,7 @@ public class GroupCmd extends LibraryCommand {
      */
     private void executePrinting(HashMap<String, List<String>> groupedData, List<String> keys) {
         for (String key : keys) {
-            System.out.println( GROUP_HEADER +key);
+            System.out.println( GROUP_HEADER + key);
             Collections.sort(groupedData.get(key));
             for (String title:groupedData.get(key)){
                 System.out.println(title);
