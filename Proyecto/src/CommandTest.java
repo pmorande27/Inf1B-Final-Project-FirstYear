@@ -45,4 +45,19 @@ public abstract class CommandTest {
     public void testExecuteLibraryDataNull() {
         testCommand.execute(null);
     }
+    @Test (expected = NullPointerException.class)
+    public void testNullArgument(){
+        String Argument = null;
+        testCommand.parseArguments(Argument);
+    }
+    @Test (expected = IllegalArgumentException.class)
+    public void testConstructorIllegalArgument(){
+        String Argument = "illegal";
+        AddCmd FailCommand =new AddCmd(Argument);
+    }
+    @Test(expected = NullPointerException.class)
+    public void NullLibraryData(){
+        LibraryData nullLibrary = null;
+        testCommand.execute(nullLibrary);
+    }
 }

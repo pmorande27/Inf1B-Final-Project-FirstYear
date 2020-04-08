@@ -1,5 +1,8 @@
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 public class SearchCmdBasicTest extends SearchCmdTest {
 
     // ------------------------- parseArguments tests --------------------
@@ -20,6 +23,70 @@ public class SearchCmdBasicTest extends SearchCmdTest {
         String argWithHyphen = "Hundred-Dollar";
         CommandTestUtils.checkArgumentInput(testCommand, true, argWithHyphen);
     }
+
+    @Test
+    public void testParseArgumentsSpaces(){
+        boolean result = testCommand.parseArguments("     ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces2(){
+        boolean result = testCommand.parseArguments("              word");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces3(){
+        boolean result = testCommand.parseArguments("                   WORD     ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces4(){
+        boolean result = testCommand.parseArguments("WORD    ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces5(){
+        boolean result = testCommand.parseArguments("WORD                   ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces6(){
+        boolean result = testCommand.parseArguments("Word      Word2tabs");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces7(){
+        boolean result = testCommand.parseArguments("Word\n"+"Word2");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces8(){
+        boolean result = testCommand.parseArguments("Word1 Word2     ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces9(){
+        boolean result = testCommand.parseArguments("Word1\n                                 word2               ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+
 
     // ------------------------- execute tests --------------------
 

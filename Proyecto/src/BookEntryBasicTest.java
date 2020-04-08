@@ -144,4 +144,26 @@ public class BookEntryBasicTest extends BookEntryTest {
         assertEquals("ToString result not as expected.", expectedResult.replaceAll("\r", "").trim(),
                 actualResult.replaceAll("\r", "").trim());
     }
+
+    //----------------------------Check Exceptions-----------------
+    @Test(expected = NullPointerException.class)
+    public void TestNullMembers(){
+        BookEntry bookNull = new BookEntry("a", new String[]{"f", null},3.0f,"dji",12);
+    }
+    @Test(expected = NullPointerException.class)
+    public void TestNullName(){
+        BookEntry bookNull = new BookEntry(null, new String[]{"f", "a"},3.0f,"dji",12);
+    }
+    @Test(expected = NullPointerException.class)
+    public void TestNullISBN(){
+        BookEntry bookNull = new BookEntry("a", new String[]{"f", "a"},3.0f,null,12);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void TestIllegalRating(){
+        BookEntry bookNull = new BookEntry("a", new String[]{"f", "a"},6.0f,"b",12);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void TestIllegalPages(){
+        BookEntry bookNull = new BookEntry("a", new String[]{"f", "a"},4.0f,"b",-12);
+    }
 }

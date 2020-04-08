@@ -3,7 +3,8 @@ import org.junit.Test;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
 
 public class GroupCmdBasicTest extends GroupCmdTest {
 
@@ -28,6 +29,69 @@ public class GroupCmdBasicTest extends GroupCmdTest {
         CommandTestUtils.checkArgumentInput(testCommand, true, TITLE_ARGUMENT);
         CommandTestUtils.checkArgumentInput(testCommand, true, AUTHOR_ARGUMENT);
     }
+    @Test
+    public void testParseArgumentsSpaces(){
+        boolean result = testCommand.parseArguments("     ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces2(){
+        boolean result = testCommand.parseArguments("              TITLE");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces3(){
+        boolean result = testCommand.parseArguments("                   TITLE     ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces4(){
+        boolean result = testCommand.parseArguments("AUTHOR    ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces5(){
+        boolean result = testCommand.parseArguments("AUTHOR                   ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces6(){
+        boolean result = testCommand.parseArguments("AUTHOR      Word2tabs");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces7(){
+        boolean result = testCommand.parseArguments("AUTHOR\n"+"Word2");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces8(){
+        boolean result = testCommand.parseArguments("AUTHOR TITLE     ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces9(){
+        boolean result = testCommand.parseArguments("             AUTHOR          ");
+        assertTrue("Given Argument should  be accepted",result);
+
+    }
+
 
     // ------------------------- execute tests --------------------
 

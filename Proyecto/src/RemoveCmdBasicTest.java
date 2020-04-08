@@ -4,6 +4,9 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 public class RemoveCmdBasicTest extends RemoveCmdTest {
 
     @Before
@@ -39,6 +42,68 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
                 CommandTestUtils.checkArgumentInput(testCommand, true, typeArg + " " + valueArg);
             }
         }
+    }
+    @Test
+    public void testParseArgumentsSpaces(){
+        boolean result = testCommand.parseArguments("     ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces2(){
+        boolean result = testCommand.parseArguments("    TITLE          word");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces3(){
+        boolean result = testCommand.parseArguments("     AUTHOR              WORD     ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces4(){
+        boolean result = testCommand.parseArguments("AUTHOR    WORD    ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces5(){
+        boolean result = testCommand.parseArguments("TITLE     WORD    ");
+        assertTrue("Given Argument should be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces6(){
+        boolean result = testCommand.parseArguments("TITLE");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces7(){
+        boolean result = testCommand.parseArguments("TITLE     ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces8(){
+        boolean result = testCommand.parseArguments("AUTHOR     ");
+        assertFalse("Given Argument should not be accepted",result);
+
+    }
+    @Test
+
+    public void testParseArgumentsSpaces9(){
+        boolean result = testCommand.parseArguments("AUTHOR");
+        assertFalse("Given Argument should not be accepted",result);
+
     }
 
     // ------------------------- execute tests --------------------

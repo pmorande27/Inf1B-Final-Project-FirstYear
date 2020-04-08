@@ -1,10 +1,11 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class AddCmdBasicTest extends CommandTest {
 
@@ -36,6 +37,43 @@ public class AddCmdBasicTest extends CommandTest {
         invalidPath = "this/is/not/a/csv/file.txt";
         CommandTestUtils.checkArgumentInput(testCommand, false, invalidPath);
     }
+    @Test
+    public void testParseArgumentsSpaces(){
+        String Argument ="      .csv";
+        boolean result = testCommand.parseArguments(Argument);
+        assertTrue(result);
+
+    }
+    @Test
+    public void testParseArgumentsSpaces2(){
+        String Argument ="      .csv           ";
+        boolean result = testCommand.parseArguments(Argument);
+        assertTrue(result);
+
+    }
+    @Test
+    public void testParseArgumentsSpaces3(){
+        String Argument ="      .c sv";
+        boolean result = testCommand.parseArguments(Argument);
+        assertFalse(result);
+
+    }
+    @Test
+    public void testParseArgumentsSpaces4(){
+        String Argument ="      .csv          f ";
+        boolean result = testCommand.parseArguments(Argument);
+        assertFalse(result);
+
+    }
+
+    @Test
+    public void testAddingBooks(){
+        String largeDataSet = "books03.csv";
+        LibraryData booksLibrary = new LibraryData();
+        testCommand.parseArguments(largeDataSet);
+        testCommand.execute(booksLibrary);
+        assertEquals(11371, booksLibrary.getBookData().size());
+    }
 
     @Test
     public void testParseArgumentsLegalArgument() {
@@ -65,4 +103,5 @@ public class AddCmdBasicTest extends CommandTest {
                     expectedBookValues.get(i));
         }
     }
+
 }
