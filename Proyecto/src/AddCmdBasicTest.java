@@ -1,15 +1,19 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import static org.junit.Assert.*;
-
+@RunWith(Parameterized.class)
 public class AddCmdBasicTest extends CommandTest {
 
     private static final String TEST_PATH = "booksTestData01.csv";
+
 
     @Override
     protected CommandType getCmdType() {
@@ -27,7 +31,18 @@ public class AddCmdBasicTest extends CommandTest {
     }
 
     // ------------------------- parseArguments tests --------------------
-    
+    @Parameterized.Parameters
+    public static Object[] parameters(){
+        return new Object[] {"books02.csv","     books02.csv",".csv","            .csv            ","books02.csv              "};
+    }
+    @Parameterized.Parameter(0)
+    public String accepted_value;
+
+    @Test public void testAcceptedValues(){
+        System.out.println(accepted_value);
+        boolean result =testCommand.parseArguments(accepted_value);
+        assertTrue(result);
+    }
     @Test
     public void testParseArgumentsIllegalArgument() {
         String blankArg = "";
