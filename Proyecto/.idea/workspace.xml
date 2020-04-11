@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f19f605b-7c99-4eb6-bc8d-4ef628357939" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExceptionsMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExceptionsMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GroupCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListCmdBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListCmdBasicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RemoveCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RemoveCmdBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveCmdBasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchCmdBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchCmdBasicTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +66,7 @@
       <recent name="C:\Users\Pmorande27\Desktop\Proyecto Informática\Inf1B-Final-Project-FirstYear\Proyecto\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchCmdBasicTest">
+  <component name="RunManager" selected="JUnit.AddCmdBasicTest and 4 more">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Proyecto" />
@@ -81,11 +74,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveCmdBasicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddCmdBasicTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyecto" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RemoveCmdBasicTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CommandTest" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="AddCmdBasicTest" />
+        <pattern testClass="GroupCmdBasicTest" />
+        <pattern testClass="ListCmdBasicTest" />
+        <pattern testClass="RemoveCmdBasicTest" />
+        <pattern testClass="SearchCmdBasicTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
         <item itemvalue="JUnit.SearchCmdBasicTest" />
         <item itemvalue="JUnit.SearchCmdBasicTest.testExecuteFlow" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SearchCmdBasicTest.testExecuteFindNoMatch" />
-        <item itemvalue="JUnit.RemoveCmdBasicTest" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +152,7 @@
       <workItem from="1586516220749" duration="3315000" />
       <workItem from="1586603732834" duration="84000" />
       <workItem from="1586603837433" duration="1000" />
-      <workItem from="1586614928496" duration="3328000" />
+      <workItem from="1586614928496" duration="6315000" />
     </task>
     <servers />
   </component>
@@ -164,10 +164,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586276839308" />
-    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586275926891">
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586618456101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1586275926891" />
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1586618456101" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586363605431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,38 +184,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586516113977" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1586618011130">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586621554744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586618011130" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1586618011130">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586621554744" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586621554744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586618011130" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1586618011130">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586621554744" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586621554744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586618011130" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1586618011130">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586621554744" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586621554744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586618011130" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586617056303">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586621554744" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586619599204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586617056303" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1586617056303">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586619599204" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1586619599204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586617056303" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1586617056303">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586619599204" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1586619599204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586617056303" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1586617056303">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586619599204" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1586619599204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586617056303" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586619599204" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1586516307074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -232,6 +232,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="731" y="223" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586467844951" />
+    <state x="690" y="275" key="extract.method.dialog" timestamp="1586619802132">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586619802132" />
     <state x="342" y="140" key="new project wizard" timestamp="1586603747272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -247,6 +251,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/RemoveCmd.java</url>
+          <line>152</line>
+          <properties class="RemoveCmd" method="parseArguments">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

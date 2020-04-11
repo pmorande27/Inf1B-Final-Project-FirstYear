@@ -151,9 +151,10 @@ public class GroupCmd extends LibraryCommand {
             System.out.println( GROUP_HEADER + key);
             Collections.sort(groupedData.get(key));
             for (String title:groupedData.get(key)){
-                System.out.println(title);
+                System.out.println("\t"+title);
             }
         }
+
     }
 
 

@@ -2,6 +2,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Class of the command Remove. It is used to remove a book from the Library.
@@ -150,8 +152,15 @@ public class RemoveCmd extends LibraryCommand {
     @Override
     protected boolean parseArguments(String argumentInput) {
         super.parseArguments(argumentInput);
-        String[] twoArguments = argumentInput.strip().split(WORDS_SEPARATOR, 2);
-       return checkValidity(twoArguments);
+        String[] twoArguments = getCommandAndValue(argumentInput);
+        return checkValidity(twoArguments);
+    }
+
+    private String[] getCommandAndValue(String argumentInput) {
+        Pattern whitespace = Pattern.compile("\\s");
+        Matcher matcher = whitespace.matcher(argumentInput.strip());
+        String finalArgument = matcher.replaceAll(" ");
+        return finalArgument.split(" ", 2);
     }
 
     /**
