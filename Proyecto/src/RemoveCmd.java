@@ -156,6 +156,18 @@ public class RemoveCmd extends LibraryCommand {
         return checkValidity(twoArguments);
     }
 
+    /**
+     * Private method that is used as a helper method in ParseArguments, it is used to separate in two the given ArgumentInput, it will be divided into the command (TITLE or AUTHOR)
+     * and the value that is going to be removed.
+     * To do this it will use a regular expression to assure that it the given input will be divided by any white-space cahratcer that it contains, it could be a space, a tab or a intro (\n)
+     * Therefore
+     * Command    Value
+     * Command\nValue
+     * Command Value
+     * are all accepted as two words.
+     * @param argumentInput given input by the user
+     * @return the array that contains the two words
+     */
     private String[] getCommandAndValue(String argumentInput) {
         Pattern whitespace = Pattern.compile("\\s");
         Matcher matcher = whitespace.matcher(argumentInput.strip());
