@@ -1,3 +1,4 @@
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -109,5 +110,18 @@ public class SearchCmdBasicTest extends SearchCmdTest {
         String expectedConsoleOutput = NO_HITS_FOUND_MESSAGE + searchTerm;
         testCommand = new SearchCmd(searchTerm);
         CommandTestUtils.checkExecuteConsoleOutput(testCommand, testLibrary, expectedConsoleOutput);
+    }
+    @Test
+    public void testExecuteFlow(){
+        LibraryData data =new LibraryData();
+        AddCmd add = new AddCmd("books05.csv");
+        add.execute(data);
+        RemoveCmd command = new RemoveCmd("TITLE 1984");
+        command.execute(data);
+        SearchCmd search = new SearchCmd("1984");
+        String expectedConsoleOutput = NO_HITS_FOUND_MESSAGE + "1984";
+
+        CommandTestUtils.checkExecuteConsoleOutput(search, data, expectedConsoleOutput);
+
     }
 }

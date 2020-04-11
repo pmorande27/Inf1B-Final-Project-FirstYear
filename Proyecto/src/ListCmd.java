@@ -103,11 +103,12 @@ public class ListCmd extends LibraryCommand {
     }
 
     /**
-     * Overridden Method used to check the validity of the given Argument Input (Supplied by the User)
-     * In this case it will check that the given input is corresponds with one of the allowed formats.
+     * Overridden Method used to check the validity of the given Argument Input (provided by the User)
+     * In this case it will check that the given input is corresponds with one of the allowed commands.
      *
      * @param argumentInput argument input for this command
      * @return true if it is valid and false otherwise.
+     * @throws NullPointerException if the given argumentInput is null.
      */
     @Override
     protected boolean parseArguments(String argumentInput) {

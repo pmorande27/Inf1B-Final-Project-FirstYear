@@ -1,13 +1,31 @@
 import org.junit.Test;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
 public class ListCmdBasicTest extends ListCmdTest {
 
     // ------------------------- parseArguments tests --------------------
+    @Test
+    public void testParseArgumentValidCommand1(){
+        boolean result = testCommand.parseArguments("SHORT");
+        assertFalse("Given Argument should not be accepted",result);
+    }
+    @Test
+    public void testParseArgumentValidCommand2(){
+        boolean result = testCommand.parseArguments("LONG");
+        assertFalse("Given Argument should not be accepted",result);
+    }
+    @Test
+    public void testParseArgumentValidCommand3(){
+        boolean result = testCommand.parseArguments("LoNG");
+        assertFalse("Given Argument should not be accepted",result);
+    }
+    @Test
+    public void testParseArgumentValidCommand4(){
+        boolean result = testCommand.parseArguments("ShORT");
+        assertFalse("Given Argument should not be accepted",result);
+    }
   
     @Test
     public void testParseArgumentsIllegalArgument() {
@@ -90,6 +108,7 @@ public class ListCmdBasicTest extends ListCmdTest {
         String expectedConsoleOutput = "3 books in library:\nTitleA\nTitleB\nTitleC";
         CommandTestUtils.checkExecuteConsoleOutput(testCommand, testLibrary, expectedConsoleOutput);
     }
+
 
     @Test
     public void testExecuteLongList() {

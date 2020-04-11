@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -124,6 +125,41 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
         testCommand = new RemoveCmd(AUTHOR_ARGUMENT + " " + AUTHOR_VALUE_ARGUMENT);
         checkRemoveAuthorExecute(testCommand, testLibrary, AUTHOR_VALUE_ARGUMENT);
     }
+    @Test
+    public void testEffectiveRemove(){
+
+        testCommand.parseArguments("TITLE 1984");
+        LibraryData data =new LibraryData();
+
+        AddCmd add = new AddCmd("books05.csv");
+        add.execute(data);
+        int initialCount =data.getBookData().size();
+
+        testCommand.execute(data);
+        int final_count = data.getBookData().size();
+        Assert.assertEquals(initialCount-1,final_count);
+    }
+    @Test
+    public void testnotEffectiveRemove(){
+
+        testCommand.parseArguments("TITLE Paths to God: Living the Bhagavad Gita");
+        LibraryData data =new LibraryData();
+
+        AddCmd add = new AddCmd("books05.csv");
+        add.execute(data);
+        int initalCount = data.getBookData().size();
+
+        testCommand.execute(data);
+        int final_count_find = data.getBookData().size();
+        add.execute(data);
+        testCommand.parseArguments("TITLE Paths to GOD: Living the Bhagavad Gita");
+        testCommand.execute(data);
+        int notfoundCunt = data.getBookData().size();
+        Assert.assertEquals(initalCount-1,final_count_find);
+        Assert.assertEquals(initalCount,notfoundCunt);
+
+    }
+
 
     @Test
     public void testExecuteRemoveAuthorConsoleOut() {
@@ -133,6 +169,7 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
         String expectedConsoleOutput = String.format(AUTHOR_REMOVE_MESSAGE, removedAuthors, AUTHOR_VALUE_ARGUMENT);
         CommandTestUtils.checkExecuteConsoleOutput(testCommand, testLibrary, expectedConsoleOutput);
     }
+
 
     @Test
     public void testExecuteNotFound() {

@@ -50,6 +50,8 @@ public class RemoveCmd extends LibraryCommand {
      * In addition the SuperClass will call the overridden method ParseArguments, and therefore it will try to initialize the values of the fields of the Command Remove.
      *
      * @param argumentInput is the String provided by the user. It is expected to contain as first word AUTHOR or TITLE.
+     * @throws IllegalArgumentException if the given argument input is not accepted by the overridden method parseArgument (look to super contructor call).
+     * @throws NullPointerException if the given argument input is null.
      */
     public RemoveCmd(String argumentInput){
         super(CommandType.REMOVE,argumentInput);
@@ -61,8 +63,7 @@ public class RemoveCmd extends LibraryCommand {
      * and it will either remove a book searching by author or remove a book searching by title.
      *
      * @param data book data to be considered for command execution.
-     * @throws NullPointerException if the given LibraryData is null
-     * @throws NullPointerException if the command or the value are null.
+     * @throws NullPointerException if the given LibraryData is null or if the command or value are null.
      * @throws IllegalArgumentException if the command is not either AUTHOR or TITLE.
      */
     @Override
@@ -87,9 +88,9 @@ public class RemoveCmd extends LibraryCommand {
     }
 
     /**
-     * Helper Method used in execute, this method is evoked when command is equal to TITLE
-     * therefore this method will iterate through all the books contained in the given Library until it finds one whose title matches the value(title) given by the user.
-     * That book will be removed and the loop will be exited.
+     * Helper Method used in the execute method, this method is only evoked when command is equal to TITLE (CommandOptions).
+     * Therefore this method will iterate through all the books contained in the given Library until it finds one whose title matches the value(title) given by the user.
+     * That book will be removed and the loop will be exited (there are no repeated books).
      * If there is no book that matches the given title a message informing the user will be printed.
      *
      * @param books is the list of bookEntries contained in the given Library. It must not be empty to enter to this method.
@@ -112,8 +113,9 @@ public class RemoveCmd extends LibraryCommand {
         }
     }
     /**
-     * Helper Method used in execute, this method is evoked when command is equal to AUTHOR
-     * therefore this method will iterate through all the books contained in the given Library until it finds one whose one of its authors matches the value(author)
+     * Helper Method used in the method execute, this method only is evoked when command is equal to AUTHOR (CommandOptions)-
+     * Therefore this method will iterate through all the books contained in the given Library until it finds one whose one of its authors matches the value
+     * (stored in the field author)
      * That book will be removed and the loop continue to remove all the books of that author.
      * there will be a count of how many books are being removed that will be printed at the end of the execution.
      *
@@ -121,16 +123,17 @@ public class RemoveCmd extends LibraryCommand {
      */
 
     private void executeRemoveAuthor(List<BookEntry> books) {
+        int bookCount = 0;
         Iterator<BookEntry>bookIterator = books.iterator();
-        int count = 0;
+
         while (bookIterator.hasNext()) {
             BookEntry book = bookIterator.next();
             if (Arrays.asList(book.getAuthors()).contains(value)) {
                 bookIterator.remove();
-                count++;
+                bookCount++;
             }
         }
-        System.out.println( count +  REMOVED_BY_AUTHOR+ value );
+        System.out.println( bookCount +  REMOVED_BY_AUTHOR+ value );
     }
 
 
@@ -142,6 +145,7 @@ public class RemoveCmd extends LibraryCommand {
      *
      * @param argumentInput argument input for this command
      * @return true if the argument is allowed and false otherwise.
+     * @throws NullPointerException if the given argumentInput is null.
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
@@ -176,7 +180,7 @@ public class RemoveCmd extends LibraryCommand {
      * which are contained in the enum class CommandOptions.
      *
      * @param Command String that corresponds with the first word of the user's input.
-     * @return true if it matches one of the command options and false otherwise.
+     * @return true if it matches one of the accepted command options (which are stored in the enum class CommandOptions) and false otherwise.
      */
     private boolean parseCommandOption(String Command) {
         for (CommandOptions options : CommandOptions.values()) {

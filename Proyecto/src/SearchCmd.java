@@ -98,7 +98,7 @@ public class SearchCmd extends LibraryCommand{
      * @param argumentInput argument input for this command
      * @return true if the given Argument passes the validity checks and false otherwise,
      * in this case the validity check consists in the method singleWord (helper method).
-     * @throws NullPointerException if the given Input argument is null.
+     * @throws NullPointerException if the given argumentInput is null.
      */
     @Override
     protected boolean parseArguments(String argumentInput) {
@@ -112,7 +112,8 @@ public class SearchCmd extends LibraryCommand{
 
     /**
      * Private method that is used to check if a given String is formed just by a single word,
-     * in this context this means that when we split the string by the " " (space) the length of the result is equal to 1.
+     * the regular expression "\\s" is used to check  if the given input is formed by a single word, with the find method of the matcher it will search in all the string for
+     * a space-like character (tab, spaces, \n...), if it found it means that the given input is not formed by a single word.
      *
      * @param argumentInput String that corresponds to the input given by the user
      * @return true the given String is formed by just one word and false otherwise.

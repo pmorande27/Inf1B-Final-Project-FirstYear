@@ -141,8 +141,8 @@ public class GroupCmd extends LibraryCommand {
 
     }
     /**
-     * Private Method that is used in execute.
-     * This method is used to print all the contents in of a HashMap, taking into account the order given by the List of keys (that has been previously ordered)
+     * Private Method, used in the method groupData.
+     * This method is used to print all the titles contained as values in of a HashMap, taking into account the order given by the List of keys (that has been previously ordered)
      * @param groupedData  HashMap that contains all the different groups of book`s titles.
      * @param keys List of all the keys (this will be used to print in the correct order all the groups).
      */
@@ -162,8 +162,8 @@ public class GroupCmd extends LibraryCommand {
      * For that the first condition is that the argument is not null, it should also take into account if it is one of the accepted commands(AUTHOR or TITLE).
      *
      * @param argumentInput argument input for this command
-     * @throws NullPointerException if the given Argument is null.
      * @return true if the Argument has passed all the tests and false otherwise.
+     * @throws NullPointerException if the given Argument is null.
      */
     @Override
     protected boolean parseArguments(String argumentInput) {

@@ -47,6 +47,7 @@ public class AddCmd extends LibraryCommand {
      *
      * @param argumentInput argument input for this command
      * @return it returns true if the Argument Input is valid and false otherwise.
+     * @throws NullPointerException if the given argumentInput is null.
      */
 
     @Override
