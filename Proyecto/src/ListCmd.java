@@ -76,7 +76,7 @@ public class ListCmd extends LibraryCommand {
             BookEntry book = bookIterator.next();
             switch (this.command){
                 case shortCommand:
-                case blackCommand:
+                case blankCommand:
                     System.out.println(book.getTitle());
                     break;
                 case longCommand:
@@ -128,11 +128,11 @@ public class ListCmd extends LibraryCommand {
      */
     private boolean parseCommandOption(String ArgumentInput) {
         if (ArgumentInput.isBlank()){
-            this.command = CommandOptionsList.blackCommand;
+            this.command = CommandOptionsList.blankCommand;
             return true;
         }
         for (CommandOptionsList options : CommandOptionsList.values()) {
-            if (options.name().equals(ArgumentInput+ COMMAND_OPTION)) {
+            if (options.name().equals(ArgumentInput+ COMMAND_OPTION) &&!options.equals(CommandOptionsList.blankCommand)) {
                 this.command = options;
                 return true;
             }

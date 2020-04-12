@@ -1,7 +1,7 @@
 /**
  * Public (constant) class used to store the exception messages that will be used in all the different classes.
  */
-public class ExceptionsMessages extends Exception {
+public class ExceptionsMessages  {
     /**
      * Public constant that is used to print a message to the user informing that one of the members of an array is null.
      */

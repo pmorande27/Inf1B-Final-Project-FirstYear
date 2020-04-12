@@ -153,6 +153,18 @@ public class GroupCmdBasicTest extends GroupCmdTest {
 
         testCommand = new GroupCmd("TITLE");
         String[] executeStdOutLines = CommandTestUtils.captureExecuteStdOutputLines(testCommand, new LibraryData());
-        assertEquals(executeStdOutLines[0],"The library has no book entries.");
+        assertEquals("The library has no book entries.",executeStdOutLines[0]);
+    }
+    @Test
+    public void testCheckGroupHeaders(){
+        testCommand = new GroupCmd("TITLE");
+        String[] executeStdOutLines =CommandTestUtils.captureExecuteStdOutputLines(testCommand,testLibrary);
+        assertEquals( "##",executeStdOutLines[1].split(" ")[0] );
+    }
+    @Test
+    public void testCheckGroupHeaders2(){
+        testCommand = new GroupCmd("AUTHOR");
+        String[] executeStdOutLines =CommandTestUtils.captureExecuteStdOutputLines(testCommand,testLibrary);
+        assertEquals( "##",executeStdOutLines[1].split(" ")[0] );
     }
 }

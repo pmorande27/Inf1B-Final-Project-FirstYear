@@ -5,5 +5,5 @@
 public enum CommandOptionsList {
     longCommand,
     shortCommand,
-    blackCommand
+    blankCommand
 }
