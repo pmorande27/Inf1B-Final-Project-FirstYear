@@ -172,7 +172,7 @@ public class RemoveCmd extends LibraryCommand {
         Pattern whitespace = Pattern.compile("\\s");
         Matcher matcher = whitespace.matcher(argumentInput.strip());
         String finalArgument = matcher.replaceAll(" ");
-        return finalArgument.split(" ", 2);
+        return finalArgument.split(" ",2);
     }
 
     /**

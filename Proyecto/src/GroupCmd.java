@@ -154,7 +154,6 @@ public class GroupCmd extends LibraryCommand {
                 System.out.println("\t"+title);
             }
         }
-
     }
 
 

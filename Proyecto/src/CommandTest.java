@@ -53,7 +53,8 @@ public abstract class CommandTest {
     @Test (expected = IllegalArgumentException.class)
     public void testConstructorIllegalArgument(){
         String Argument = "illegal";
-        AddCmd FailCommand =new AddCmd(Argument);
+        AddCmd FailCommand =new AddCmd(Argument) {
+        };
     }
     @Test(expected = NullPointerException.class)
     public void NullLibraryData(){

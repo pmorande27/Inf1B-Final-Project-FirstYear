@@ -144,6 +144,15 @@ public class BookEntryBasicTest extends BookEntryTest {
         assertEquals("ToString result not as expected.", expectedResult.replaceAll("\r", "").trim(),
                 actualResult.replaceAll("\r", "").trim());
     }
+    @Test
+    public void testToStringCheckAuthors(){
+        BookEntry test = new BookEntry("test",new String[]{"test1","test2","test3","test4"},3.0f,"test",0);
+        String expectedResult = "test\nby test1, test2, test3, test4\nRating: 3.00\nISBN: test\n0 pages";
+        String actualResult = test.toString();
+        assertEquals("ToString result not as expected.", expectedResult.replaceAll("\r", "").trim(),
+                actualResult.replaceAll("\r", "").trim());
+
+    }
 
     //----------------------------Check Exceptions-----------------
     @Test(expected = NullPointerException.class)
