@@ -141,4 +141,18 @@ public class GroupCmdBasicTest extends GroupCmdTest {
         List<String> expectedGroups = List.of("A Author", "B Author", "C Author", "D Author", "E Author", "F Author");
         checkGroupOutputOrder(executeStdOutLines, expectedGroups);
     }
+    @Test
+    public void tetEmptyLibraryAuthor(){
+
+        testCommand = new GroupCmd("AUTHOR");
+        String[] executeStdOutLines = CommandTestUtils.captureExecuteStdOutputLines(testCommand, new LibraryData());
+        assertEquals(executeStdOutLines[0],"The library has no book entries.");
+    }
+    @Test
+    public void tetEmptyLibraryTitle(){
+
+        testCommand = new GroupCmd("TITLE");
+        String[] executeStdOutLines = CommandTestUtils.captureExecuteStdOutputLines(testCommand, new LibraryData());
+        assertEquals(executeStdOutLines[0],"The library has no book entries.");
+    }
 }

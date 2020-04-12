@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.experimental.theories.Theory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,6 @@ public abstract class SearchCmdTest extends CommandTest {
     protected CommandType getCmdType() {
         return CommandType.SEARCH;
     }
-
     @Before
     public void setup() {
         testCommand = new SearchCmd(SINGLE_WORD_TITLE);

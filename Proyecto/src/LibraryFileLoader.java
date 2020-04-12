@@ -84,18 +84,15 @@ public class LibraryFileLoader {
                 if (isFirst) {
                     isFirst = false;
                 } else {
-
                     addNewBook(line, books);
                     lineCount++;
                 }
             }
             catch (IllegalArgumentException | NullPointerException e){
                 lineCount++;
-                System.err.println("Error: Could not Load the book in line: "+ lineCount + " possible error in the parameters of the book" );
+                System.err.println("Error: Could not Load the book in line: "+ lineCount + " possible error in the parameters of the book: " + e.getMessage() );
             }
         }
-
-
         return books;
     }
 

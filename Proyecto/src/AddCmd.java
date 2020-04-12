@@ -53,13 +53,12 @@ public class AddCmd extends LibraryCommand {
     @Override
     protected boolean parseArguments(String argumentInput) {
         super.parseArguments(argumentInput);
-        if (argumentInput.strip().endsWith(CSV_EXTENSION)) {
-            parsedArgument = Path.of(argumentInput.strip());
+        String argumentInputWithoutSpaces = argumentInput.strip();
+        if (argumentInputWithoutSpaces.endsWith(CSV_EXTENSION)) {
+            parsedArgument = Path.of(argumentInputWithoutSpaces);
             return true;
         }
         return false;
-
-
     }
 }
 

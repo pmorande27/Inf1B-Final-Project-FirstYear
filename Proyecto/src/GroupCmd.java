@@ -80,10 +80,8 @@ public class GroupCmd extends LibraryCommand {
                     throw new IllegalArgumentException(ExceptionsMessages.ERROR_IN_PARSING_MESSAGE);
             }
         }
-            List<String> keys = new ArrayList<>(groupedData.keySet());
-            Collections.sort(keys);
-            System.out.println(DATA_BY + command.toString());
-            executePrinting(groupedData, keys);
+
+            executePrinting(groupedData);
 
     }
 
@@ -142,11 +140,14 @@ public class GroupCmd extends LibraryCommand {
     }
     /**
      * Private Method, used in the method groupData.
-     * This method is used to print all the titles contained as values in of a HashMap, taking into account the order given by the List of keys (that has been previously ordered)
-     * @param groupedData  HashMap that contains all the different groups of book`s titles.
-     * @param keys List of all the keys (this will be used to print in the correct order all the groups).
+     * This method is used to print all the titles contained as values in of a HashMap, taking into account the lexicographical order.
+     *
+     * @param groupedData  HashMap that contains all the different groups of book titles.
      */
-    private void executePrinting(HashMap<String, List<String>> groupedData, List<String> keys) {
+    private void executePrinting(HashMap<String, List<String>> groupedData) {
+        List<String> keys = new ArrayList<>(groupedData.keySet());
+        Collections.sort(keys);
+        System.out.println(DATA_BY + command.toString());
         for (String key : keys) {
             System.out.println( GROUP_HEADER + key);
             Collections.sort(groupedData.get(key));
@@ -175,6 +176,7 @@ public class GroupCmd extends LibraryCommand {
      * Private Method uses as a Helper method in parseArguments.
      * This method is used to determine if the given argument matches one of the two accepted command values that are of the type CommandOptions,
      * and can have the values of AUTHOR or TITLE
+     *
      * @param option argument input given by the user.
      * @return true if the input matches one of the two command options and false otherwise.
      */

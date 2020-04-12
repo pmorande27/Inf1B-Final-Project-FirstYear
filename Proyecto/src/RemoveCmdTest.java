@@ -44,7 +44,6 @@ public abstract class RemoveCmdTest extends CommandTest {
                     break;
                 }
             }
-
             if (found) {
                 break;
             }

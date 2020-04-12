@@ -10,11 +10,7 @@ import java.util.regex.Pattern;
  * It has two modalities, it can remove a book searching by the title of the book, or it can remove book(s) by searching one of the authors of the book(s).
  */
 public class RemoveCmd extends LibraryCommand {
-    /**
-     *  (String) constant used to define the character that separates words.
-     *  If you split a string by " " you will get all the different words that conformed the string.
-     */
-    public static final String WORDS_SEPARATOR = " ";
+
     /**
      * Private (String) constant used to print a message to the user,
      * in this case the message informs the user that the searched book (by title) has been removed from the Library
@@ -35,7 +31,6 @@ public class RemoveCmd extends LibraryCommand {
      * in this case the message informs the user that the given library is empty.
      */
     private static final String NO_BOOK_ENTRIES = "The library has no book entries.";
-    public static final int AT_LEAST_TWO_WORDS = 2;
     /**
      * Field  (enum CommandOptions) that can take the values AUTHOR or TITLE,
      * it will determine the executing modality of the command.
@@ -127,7 +122,6 @@ public class RemoveCmd extends LibraryCommand {
     private void executeRemoveAuthor(List<BookEntry> books) {
         int bookCount = 0;
         Iterator<BookEntry>bookIterator = books.iterator();
-
         while (bookIterator.hasNext()) {
             BookEntry book = bookIterator.next();
             if (Arrays.asList(book.getAuthors()).contains(value)) {
@@ -157,14 +151,16 @@ public class RemoveCmd extends LibraryCommand {
     }
 
     /**
-     * Private method that is used as a helper method in ParseArguments, it is used to separate in two the given ArgumentInput, it will be divided into the command (TITLE or AUTHOR)
-     * and the value that is going to be removed.
-     * To do this it will use a regular expression to assure that it the given input will be divided by any white-space cahratcer that it contains, it could be a space, a tab or a intro (\n)
+     * Private method that is used as a helper method in ParseArguments, it is used to separate in two the given ArgumentInput,
+     * it will be divided into the command (TITLE or AUTHOR) and the value that is going to be removed.
+     * To do this it will use a regular expression to assure that it the given input will be divided by any white-space character that it contains,
+     * it could be a space, a tab or a intro (\n)
      * Therefore
-     * Command    Value
-     * Command\nValue
-     * Command Value
+     * "Command\tValue"
+     * "Command\nValue"
+     * "Command Value"
      * are all accepted as two words.
+     *
      * @param argumentInput given input by the user
      * @return the array that contains the two words
      */
@@ -187,7 +183,7 @@ public class RemoveCmd extends LibraryCommand {
      */
 
     private boolean checkValidity(String[] twoArguments) {
-        if (twoArguments.length == AT_LEAST_TWO_WORDS && !twoArguments[1].isBlank()){
+        if (twoArguments.length == 2 && !twoArguments[1].isBlank()){
             value = twoArguments[1].strip();
             return parseCommandOption(twoArguments[0]);
 

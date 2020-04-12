@@ -1,7 +1,6 @@
 import org.junit.Test;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.*;
 
 public class ListCmdBasicTest extends ListCmdTest {
 
@@ -108,6 +107,58 @@ public class ListCmdBasicTest extends ListCmdTest {
         String expectedConsoleOutput = "3 books in library:\nTitleA\nTitleB\nTitleC";
         CommandTestUtils.checkExecuteConsoleOutput(testCommand, testLibrary, expectedConsoleOutput);
     }
+    @Test
+    public void testExecuteBlankList() {
+        String expectedConsoleOutput = "3 books in library:\nTitleA\nTitleB\nTitleC";
+        testCommand.parseArguments("");
+        CommandTestUtils.checkExecuteConsoleOutput(testCommand, testLibrary, expectedConsoleOutput);
+    }
+    @Test
+    public void testNoBookInLibrary(){
+        String expectedConsoleOutput = "The library has no book entries.";
+        LibraryData data = new LibraryData();
+        CommandTestUtils.checkExecuteConsoleOutput(testCommand,data,expectedConsoleOutput);
+    }
+    @Test
+    public void testExecuteBlankListAndShort() {
+        testCommand.parseArguments("short");
+        StdStreamIntercept intercept = new StdStreamIntercept();
+        intercept.stdCaptureStart();
+        testCommand.execute(testLibrary);
+        String resultShort = intercept.getCapturedStdOut();
+        StdStreamIntercept intercept2 = new StdStreamIntercept();
+        intercept2.stdCaptureStart();
+        testCommand.parseArguments("");
+        testCommand.execute(testLibrary);
+        String resultBlank = intercept2.getCapturedStdOut();
+        intercept.stdCaptureStop();
+        intercept2.stdCaptureStop();
+        assertEquals(resultBlank,resultShort);
+    }
+    @Test
+    public void testHeaderShort(){
+    String[] executeStdOutLines = CommandTestUtils.captureExecuteStdOutputLines(testCommand, testLibrary);
+    int books = testLibrary.getBookData().size();
+
+    assertEquals("Unexpected group output header.", books+" books in library:", executeStdOutLines[0]);
+}
+    @Test
+    public void testHeaderLong(){
+        testCommand.parseArguments("long");
+        String[] executeStdOutLines = CommandTestUtils.captureExecuteStdOutputLines(testCommand, testLibrary);
+        int books = testLibrary.getBookData().size();
+
+        assertEquals("Unexpected group output header.", books+" books in library:", executeStdOutLines[0]);
+    }
+    @Test
+    public void testHeaderBlank(){
+        testCommand.parseArguments("");
+        String[] executeStdOutLines = CommandTestUtils.captureExecuteStdOutputLines(testCommand, testLibrary);
+        int books = testLibrary.getBookData().size();
+
+        assertEquals("Unexpected group output header.", books+" books in library:", executeStdOutLines[0]);
+    }
+
 
 
     @Test

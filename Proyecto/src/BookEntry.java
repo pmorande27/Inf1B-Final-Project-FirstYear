@@ -72,7 +72,8 @@ public final class BookEntry {
      * @param ISBN String that describes the ISBN number of the book.
      * @param pages int that describes the number of pages of the book.
      * @throws NullPointerException if a member of the parameter authors is null or if the parameters name or ISBN are null.
-     * @throws IllegalArgumentException if the rating is not within the accepted range, uses the method checkRating for it.
+     * @throws IllegalArgumentException if the rating is not within the accepted range, uses the method checkRating to verify  it. It will also throw an IllegalArgumentException
+     * if the given number of pages is negative.
      */
 
     public BookEntry(String name, String[] authors, float rating , String ISBN, int pages){
