@@ -17,8 +17,8 @@ public class AddCmd extends LibraryCommand {
     private Path parsedArgument;
 
     /**
-     * Constructor of the class that will call the constructor of the super class.
-     * This will call the method parseArguments to initialize the field parseArgument.
+     * Constructor of the class that will make use of the constructor of the super class.
+     * This will call the method parseArguments to initialize the field of the class parsedArgument.
      *
      * @param argumentInput this is the input given by the user (String) that will contain information about where the file is located (path). To be valid it
      */
@@ -46,7 +46,7 @@ public class AddCmd extends LibraryCommand {
      * for that it will check if the ending of the input is ".csv".
      *
      * @param argumentInput argument input for this command
-     * @return it returns true if the Argument Input is valid and false otherwise.
+     * @return it returns true if the Argument Input  is valid (.csv ending) and false otherwise.
      * @throws NullPointerException if the given argumentInput is null.
      */
 

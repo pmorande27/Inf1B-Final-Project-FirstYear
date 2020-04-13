@@ -56,7 +56,7 @@ public class SearchCmd extends LibraryCommand{
     /**
      * Private method that is used as a helper Method of execute.
      * It is used to iterate through all the books contained in a given Library.
-     * To do so it uses an Iterator. If a BookEntry's title contains the key value (Non-case sensitive) the title will be printed by the method.
+     * If a BookEntry's title contains the key value (Non-case sensitive) the title will be printed by the method.
      *
      * @param books list of all the books contained in a given Library.
      */

@@ -64,7 +64,7 @@ public final class BookEntry {
     private final String ISBN;
 
     /**
-     * Constructor of the class BookEntry that is used to Initialize all the private fields of the class.
+     * Constructor of the class BookEntry that is used to create an instance of the class, initializing all the private fields that describe the object.
      *
      * @param name String that contains the title of the book.
      * @param authors Array of Strings that contains all the information regarding the author(s) of the book.
@@ -72,8 +72,8 @@ public final class BookEntry {
      * @param ISBN String that describes the ISBN number of the book.
      * @param pages int that describes the number of pages of the book.
      * @throws NullPointerException if a member of the parameter authors is null or if the parameters name or ISBN are null.
-     * @throws IllegalArgumentException if the rating is not within the accepted range, uses the method checkRating to verify  it. It will also throw an IllegalArgumentException
-     * if the given number of pages is negative.
+     * @throws IllegalArgumentException if the rating is not within the accepted range, uses the method checkRating to verify  it.
+     * It will also throw an IllegalArgumentException if the given number of pages is negative.
      */
 
     public BookEntry(String name, String[] authors, float rating , String ISBN, int pages){
@@ -89,7 +89,7 @@ public final class BookEntry {
     }
 
     /**
-     * Public Method used to get the rating of a  book.
+     * Public Method used to get the rating of a bookEntry.
      *
      * @return this method should return the field rating (Float) of the object.
      */
@@ -98,7 +98,7 @@ public final class BookEntry {
         return rating;
     }
     /**
-     * Public Method used to get the authors of a  book.
+     * Public Method used to get the authors of a  bookEntry.
      *
      * @return this method should return the field author (Array of Strings) of the object.
      */
@@ -107,7 +107,7 @@ public final class BookEntry {
         return authors.clone();
     }
     /**
-     * Public Method used to get the Title of a  book.
+     * Public Method used to get the Title of a  bookEntry.
      *
      * @return this method should return the field title (String) of the object.
      */
@@ -118,7 +118,7 @@ public final class BookEntry {
     }
 
     /**
-     * Public Method used to get the pages of a  book.
+     * Public Method used to get the pages of a  bookEntry.
      *
      * @return this method should return the field pages (int) of the object.
      */
@@ -163,8 +163,8 @@ public final class BookEntry {
     }
 
     /**
-     * Overridden Public Method that is used to produce the has Code of an instance of the class (object of class BookEntry).
-     * For that it Will be taken into account the value of all of its fields. (Which describe the object).
+     * Overridden Public Method that is used to produce the hashCode of an instance of the class (object of class BookEntry).
+     * For that it Will take into account the value of all of its fields (Which describe the object).
      *
      * @return integer that represents the has code of the object.
      */
@@ -193,7 +193,7 @@ public final class BookEntry {
 
     /**
      * Private Method that is used as a Helper Method of toString in the Class BookEntry.
-     * It is used to create an String from the array of Strings that describe the authors of a book.
+     * It is used to create an String (with the appropriate format) from the array of Strings that describe the authors of a book.
      *
      * @param authors Array of Strings that contains the information about the author(s) of the book.
      * @return a single String that has the same information contained in the Array authors but in the correct format.

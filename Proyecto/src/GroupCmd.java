@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Class for Command Group, this command is to print all the books of a Library grouped by author or title, depending on the modality chosen by the author (with the command).
+ * Class for Command Group, this command is used to print all the books of a Library grouped by author or title, depending on the modality chosen by the user.
  */
 public class GroupCmd extends LibraryCommand {
     /**
@@ -26,10 +26,12 @@ public class GroupCmd extends LibraryCommand {
     private CommandOptions command;
 
     /**
-     * Constructor of the class, it creates a Group Command. It calls the super Class  constructor using as parameters the CommandType GROUP and the ArgumentInput.
+     * Constructor of the class, it creates a Group Command. It calls the super Class constructor.
      * This SuperClass Constructor will call the overridden method parseArguments to try to initialize the fields of the created Group Command.
      *
      * @param ArgumentInput String given by the user. It is expected to take the value of either AUTHOR or TITLE.
+     * @throws IllegalArgumentException if the given ArgumentInput is not valid.
+     * @throws NullPointerException if the given ArgumentInput is null.
      */
     public GroupCmd(String ArgumentInput){
         super(CommandType.GROUP,ArgumentInput);
@@ -37,7 +39,7 @@ public class GroupCmd extends LibraryCommand {
 
     /**
      * Overridden method that is used to execute the command Group.
-     * if the given Library is not empty it will try to order the books in groups using a helper method.
+     * if the given Library is not empty it will try to order (and print) the books in groups using a helper method.
      * If it is empty it will print a message to the user.
      *
      * @param data book data to be considered for command execution.
@@ -80,9 +82,7 @@ public class GroupCmd extends LibraryCommand {
                     throw new IllegalArgumentException(ExceptionsMessages.ERROR_IN_PARSING_MESSAGE);
             }
         }
-
             executePrinting(groupedData);
-
     }
 
     /**

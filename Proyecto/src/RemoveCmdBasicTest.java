@@ -270,17 +270,5 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
         removeCmd.execute(testLibrary);
     }
 
-    @Test(expected = NullPointerException.class)
-    public void testNullValue() throws IllegalAccessException {
-        RemoveCmd removeCmd = new RemoveCmd("AUTHOR a");
-        Field[] a = removeCmd.getClass().getDeclaredFields();
-        for (Field b : a) {
-            if (!java.lang.reflect.Modifier.isStatic(b.getModifiers())) {
-                b.setAccessible(true);
-                b.set(removeCmd, null);
-            }
 
-        }
-        removeCmd.execute(testLibrary);
-    }
 }
