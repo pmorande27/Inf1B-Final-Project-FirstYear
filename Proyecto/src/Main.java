@@ -9,7 +9,6 @@ public class Main {
      * @param args not used for arguments
      */
     public static void main(String[] args) {
-
         LibraryBrowser browser = new LibraryBrowser();
         browser.run();
     }

@@ -47,7 +47,10 @@ public class ListCmd extends LibraryCommand {
      * It uses a helper method called listBooks.
      *
      * @param data book data to be considered for command execution.
-     * @throws NullPointerException if data is null or if the command is null.
+     * @throws NullPointerException if data is null or if the command is null the last one  should not happen if the logic of the programme is maintained.
+     * However, this exception makes the code more safe from reflection.
+     * @throws IllegalArgumentException if the command is not valid, this should not happen if the logic of the programme is maintained.However,
+     * this exception makes the code more safe from reflection.
      */
     @Override
     public void execute(LibraryData data) {

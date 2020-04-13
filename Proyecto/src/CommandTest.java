@@ -60,8 +60,8 @@ public abstract class CommandTest {
     }
     @Test(expected = NullPointerException.class)
     public void NullLibraryData(){
-        LibraryData nullLibrary = null;
-        testCommand.execute(nullLibrary);
+
+        testCommand.execute(null);
     }
     @Test(expected = NullPointerException.class)
     public void testNullValue() throws IllegalAccessException {

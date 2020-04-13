@@ -60,8 +60,10 @@ public class RemoveCmd extends LibraryCommand {
      * and it will either remove a book searching by author or remove a book searching by title.
      *
      * @param data book data to be considered for command execution.
-     * @throws NullPointerException if the given LibraryData is null or if the command or value are null.
-     * @throws IllegalArgumentException if the command is not either AUTHOR or TITLE.
+     * @throws NullPointerException if the given LibraryData is null or if the command or value are null, the last one  should not happen
+     * if the logic of the programme is maintained. However, this exception makes the code more safe from reflection..
+     * @throws IllegalArgumentException if the command is not valid, this should not happen if the logic of the programme is maintained.However,
+     * this exception makes the code more safe from reflection.
      */
     @Override
     public void execute(LibraryData data) {

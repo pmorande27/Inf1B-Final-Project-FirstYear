@@ -43,7 +43,8 @@ public class SearchCmd extends LibraryCommand{
      * in this particular case it is used to search and print all the books whose titles contain a given String (provided by the user)
      *
      * @param data book data to be considered for command execution.
-     * @throws NullPointerException if the given LibraryData is null or if the parsedArgument is null, the second case means that there has been a problem during parsing.
+     * @throws NullPointerException if data is null or if the parsedArgument is null the last one  should not happen if the logic of the programme is maintained.
+     * However, this exception makes the code more safe from reflection.
      */
     @Override
     public void execute(LibraryData data) {

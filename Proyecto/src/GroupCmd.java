@@ -43,7 +43,8 @@ public class GroupCmd extends LibraryCommand {
      * If it is empty it will print a message to the user.
      *
      * @param data book data to be considered for command execution.
-     * @throws NullPointerException if the given LibraryData is null or if the command is null.
+     * @throws NullPointerException if the given LibraryData is null or if the command is null, the last case should not happen if the logic of the programme is maintained.However,
+     * this exception makes the code more safe from reflection.
      */
     @Override
     public void execute(LibraryData data) {
@@ -64,6 +65,8 @@ public class GroupCmd extends LibraryCommand {
      * This method uses two helper methods in function of what type of group has been chosen by the user.
      *
      * @param books is the list of books contained in the given Library, to enter this method it must not be empty.
+     * @throws IllegalArgumentException if the command is not valid, this should not happen if the logic of the programme is maintained.However,
+     * this exception makes the code more safe from reflection.
      */
     private void groupData(List<BookEntry> books) {
         HashMap<String, List<String>> groupedData = new HashMap<>();

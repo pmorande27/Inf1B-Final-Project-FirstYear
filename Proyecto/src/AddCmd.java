@@ -32,6 +32,8 @@ public class AddCmd extends LibraryCommand {
      * This method is used to execute the command ADD. Therefore it will load the data of the given csv file to a LibraryData
      *
      * @param data book data to be considered for command execution.
+     * @throws NullPointerException if data is null or if the parsedArgument is null the last one should not happen if the logic of the programme is maintained.
+     * However, this exception makes the code more safe from reflection.
      */
     @Override
     public void execute(LibraryData data) {
