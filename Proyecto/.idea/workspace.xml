@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f19f605b-7c99-4eb6-bc8d-4ef628357939" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RemoveCmdBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveCmdBasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEntryBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookEntryBasicTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,59 +70,50 @@
       <recent name="C:\Users\Pmorande27\Desktop\Proyecto Informática\Inf1B-Final-Project-FirstYear\Proyecto\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddCmdBasicTest,testNullValue and 4 more">
-    <configuration name="AddCmdBasicTest,testNullValue and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommandTest" />
-      <option name="METHOD_NAME" value="testNullValue" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="AddCmdBasicTest,testNullValue" />
-        <pattern testClass="GroupCmdBasicTest,testNullValue" />
-        <pattern testClass="ListCmdBasicTest,testNullValue" />
-        <pattern testClass="RemoveCmdBasicTest,testNullValue" />
-        <pattern testClass="SearchCmdBasicTest,testNullValue" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddCmdBasicTest.testNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookEntryBasicTest">
+    <configuration name="AddCmdBasicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyecto" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddCmdBasicTest" />
-      <option name="METHOD_NAME" value="testNullValue" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddCmdBasicTest.testAcceptedValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddCmdBasicTest" />
+      <option name="METHOD_NAME" value="testAcceptedValues" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCmdBasicTest.testNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookEntryBasicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyecto" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GroupCmdBasicTest" />
-      <option name="METHOD_NAME" value="testNullValue" />
+      <option name="MAIN_CLASS_NAME" value="BookEntryBasicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookEntryBasicTest.testFinalFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookEntryBasicTest" />
+      <option name="METHOD_NAME" value="testFinalFields" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListCmdBasicTest.testNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookEntryBasicTest.testNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyecto" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ListCmdBasicTest" />
+      <option name="MAIN_CLASS_NAME" value="BookEntryBasicTest" />
       <option name="METHOD_NAME" value="testNullValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RemoveCmdBasicTest.testNullCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RemoveCmdBasicTest" />
-      <option name="METHOD_NAME" value="testNullCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddCmdBasicTest,testNullValue and 4 more" />
-        <item itemvalue="JUnit.ListCmdBasicTest.testNullValue" />
-        <item itemvalue="JUnit.AddCmdBasicTest.testNullValue" />
-        <item itemvalue="JUnit.RemoveCmdBasicTest.testNullCommand" />
-        <item itemvalue="JUnit.GroupCmdBasicTest.testNullValue" />
+        <item itemvalue="JUnit.BookEntryBasicTest" />
+        <item itemvalue="JUnit.AddCmdBasicTest" />
+        <item itemvalue="JUnit.BookEntryBasicTest.testFinalFields" />
+        <item itemvalue="JUnit.BookEntryBasicTest.testNullValue" />
+        <item itemvalue="JUnit.AddCmdBasicTest.testAcceptedValues" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +154,7 @@
       <workItem from="1586603837433" duration="1000" />
       <workItem from="1586614928496" duration="23863000" />
       <workItem from="1586702462011" duration="8017000" />
-      <workItem from="1586768436478" duration="9325000" />
+      <workItem from="1586768436478" duration="10799000" />
     </task>
     <servers />
   </component>
@@ -183,10 +170,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="83" y="585" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586715070407" />
-    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586771612613">
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586797440953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1586771612612" />
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1586797440953" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586363605431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -203,22 +190,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586516113977" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586795800175">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586798128128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586795800175" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586795800175">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586798128128" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586798128127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586795800175" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586795800175">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586798128127" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586798128127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586795800175" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586795800175">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586798128127" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586798128127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586795800175" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586798128127" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586795374192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,7 +252,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/BookEntryBasicTest.java</url>
-          <line>137</line>
+          <line>154</line>
           <properties class="BookEntryBasicTest" method="testToStringReturnValue">
             <option name="EMULATED" value="true" />
           </properties>
@@ -273,7 +260,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/BookEntryBasicTest.java</url>
-          <line>29</line>
+          <line>33</line>
           <properties class="BookEntryBasicTest" method="testGetTitle">
             <option name="EMULATED" value="true" />
           </properties>

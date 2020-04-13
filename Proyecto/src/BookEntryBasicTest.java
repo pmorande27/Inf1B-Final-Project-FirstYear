@@ -1,4 +1,8 @@
+import org.junit.Assert;
 import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.util.Arrays;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -34,6 +38,19 @@ public class BookEntryBasicTest extends BookEntryTest {
 
         String actual = testBook.getTitle();
         assertEquals("Unexpected " + fieldName + " returned by getter.", expected, actual);
+    }
+    @Test
+    public void testFinalFields() throws IllegalAccessException {
+        String[] fields = {"pages","ISBN","rating","authors","title"};
+        int count = 0;
+        Field[] a = testBook.getClass().getDeclaredFields();
+        for (Field b : a) {
+            if (!java.lang.reflect.Modifier.isStatic(b.getModifiers())&&java.lang.reflect.Modifier.isFinal(b.getModifiers()) && Arrays.asList(fields).contains(b.getName())) {
+               count++;
+            }
+
+        }
+        assertEquals(count,5);
     }
 
     @Test
