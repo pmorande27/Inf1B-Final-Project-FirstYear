@@ -2,6 +2,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +17,8 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
 
     @Before
     public void setup() {
-        testCommandByAuthors=  new RemoveCmd("AUTHOR J.K. Rowling");
-        data2 =new LibraryData();
+        testCommandByAuthors = new RemoveCmd("AUTHOR J.K. Rowling");
+        data2 = new LibraryData();
         addDatabase1 = new AddCmd("books01.csv");
         addDatabase5 = new AddCmd("books05.csv");
 
@@ -25,9 +26,9 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
 
         testLibrary = new LibraryData();
         List<BookEntry> bookData = new ArrayList<>();
-        bookData.add(new BookEntry("TitleA", new String[] { "AuthorA" }, 3.2f, "ISBNA", 500));
-        bookData.add(new BookEntry(TITLE_VALUE_ARGUMENT, new String[] { AUTHOR_VALUE_ARGUMENT }, 4.3f, "ISBNB", 400));
-        bookData.add(new BookEntry("TitleC", new String[] { "AuthorC" }, 1.3f, "ISBNC", 300));
+        bookData.add(new BookEntry("TitleA", new String[]{"AuthorA"}, 3.2f, "ISBNA", 500));
+        bookData.add(new BookEntry(TITLE_VALUE_ARGUMENT, new String[]{AUTHOR_VALUE_ARGUMENT}, 4.3f, "ISBNB", 400));
+        bookData.add(new BookEntry("TitleC", new String[]{"AuthorC"}, 1.3f, "ISBNC", 300));
         FieldTestUtils.setPrivateField(testLibrary, testLibrary.getClass(), "books", bookData);
     }
 
@@ -44,8 +45,8 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
 
     @Test
     public void testParseArgumentsLegalArgument() {
-        String[] valueArgs = new String[] { TITLE_VALUE_ARGUMENT, AUTHOR_VALUE_ARGUMENT, GENERIC_VALUE_ARGUMENT };
-        String[] typeArgs = new String[] { TITLE_ARGUMENT, AUTHOR_ARGUMENT };
+        String[] valueArgs = new String[]{TITLE_VALUE_ARGUMENT, AUTHOR_VALUE_ARGUMENT, GENERIC_VALUE_ARGUMENT};
+        String[] typeArgs = new String[]{TITLE_ARGUMENT, AUTHOR_ARGUMENT};
 
         for (String typeArg : typeArgs) {
             for (String valueArg : valueArgs) {
@@ -53,80 +54,91 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
             }
         }
     }
+
     @Test
-    public void testParseArgumentsSpaces(){
+    public void testParseArgumentsSpaces() {
         boolean result = testCommand.parseArguments("     ");
-        assertFalse("Given Argument should not be accepted",result);
+        assertFalse("Given Argument should not be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces2(){
+    public void testParseArgumentsSpaces2() {
         boolean result = testCommand.parseArguments("    TITLE          word");
-        assertTrue("Given Argument should be accepted",result);
+        assertTrue("Given Argument should be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces3(){
+    public void testParseArgumentsSpaces3() {
         boolean result = testCommand.parseArguments("     AUTHOR              WORD     ");
-        assertTrue("Given Argument should be accepted",result);
+        assertTrue("Given Argument should be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces4(){
+    public void testParseArgumentsSpaces4() {
         boolean result = testCommand.parseArguments("AUTHOR    WORD    ");
-        assertTrue("Given Argument should be accepted",result);
+        assertTrue("Given Argument should be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces5(){
+    public void testParseArgumentsSpaces5() {
         boolean result = testCommand.parseArguments("TITLE     WORD    ");
-        assertTrue("Given Argument should be accepted",result);
+        assertTrue("Given Argument should be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces6(){
+    public void testParseArgumentsSpaces6() {
         boolean result = testCommand.parseArguments("TITLE");
-        assertFalse("Given Argument should not be accepted",result);
+        assertFalse("Given Argument should not be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces7(){
+    public void testParseArgumentsSpaces7() {
         boolean result = testCommand.parseArguments("TITLE     ");
-        assertFalse("Given Argument should not be accepted",result);
+        assertFalse("Given Argument should not be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces8(){
+    public void testParseArgumentsSpaces8() {
         boolean result = testCommand.parseArguments("AUTHOR     ");
-        assertFalse("Given Argument should not be accepted",result);
+        assertFalse("Given Argument should not be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces9(){
+    public void testParseArgumentsSpaces9() {
         boolean result = testCommand.parseArguments("AUTHOR");
-        assertFalse("Given Argument should not be accepted",result);
+        assertFalse("Given Argument should not be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces10(){
+    public void testParseArgumentsSpaces10() {
         boolean result = testCommand.parseArguments("AUTHOR\tword1");
-        assertTrue("Given Argument should  be accepted",result);
+        assertTrue("Given Argument should  be accepted", result);
 
     }
+
     @Test
 
-    public void testParseArgumentsSpaces11(){
+    public void testParseArgumentsSpaces11() {
         boolean result = testCommand.parseArguments("AUTHOR\nword1");
-        assertTrue("Given Argument should not be accepted",result);
+        assertTrue("Given Argument should not be accepted", result);
 
     }
 
@@ -148,25 +160,27 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
         testCommand = new RemoveCmd(AUTHOR_ARGUMENT + " " + AUTHOR_VALUE_ARGUMENT);
         checkRemoveAuthorExecute(testCommand, testLibrary, AUTHOR_VALUE_ARGUMENT);
     }
+
     @Test
-    public void testEffectiveRemove(){
+    public void testEffectiveRemove() {
 
         testCommand.parseArguments("TITLE 1984");
-        LibraryData data =new LibraryData();
+        LibraryData data = new LibraryData();
 
         AddCmd add = new AddCmd("books05.csv");
         add.execute(data);
-        int initialCount =data.getBookData().size();
+        int initialCount = data.getBookData().size();
 
         testCommand.execute(data);
         int final_count = data.getBookData().size();
-        Assert.assertEquals(initialCount-1,final_count);
+        Assert.assertEquals(initialCount - 1, final_count);
     }
+
     @Test
-    public void testNotEffectiveRemove(){
+    public void testNotEffectiveRemove() {
 
         testCommand.parseArguments("TITLE Paths to God: Living the Bhagavad Gita");
-        LibraryData data =new LibraryData();
+        LibraryData data = new LibraryData();
 
         AddCmd add = new AddCmd("books05.csv");
         add.execute(data);
@@ -178,54 +192,59 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
         testCommand.parseArguments("TITLE Paths to GOD: Living the Bhagavad Gita");
         testCommand.execute(data);
         int notfoundCunt = data.getBookData().size();
-        Assert.assertEquals(initalCount-1,final_count_find);
-        Assert.assertEquals(initalCount,notfoundCunt);
+        Assert.assertEquals(initalCount - 1, final_count_find);
+        Assert.assertEquals(initalCount, notfoundCunt);
 
     }
+
     @Test
-    public void testRemoveByAuthor(){
+    public void testRemoveByAuthor() {
         addDatabase1.execute(data2);
         int initialCount = data2.getBookData().size();
         testCommandByAuthors.execute(data2);
         int finalCount = data2.getBookData().size();
-        assertEquals(initialCount-3,finalCount);
+        assertEquals(initialCount - 3, finalCount);
     }
+
     @Test
-    public void testRemoveByAuthor2(){
+    public void testRemoveByAuthor2() {
         addDatabase1.execute(data2);
         String expectedOutput = "3 books removed for author: J.K. Rowling";
-        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors,data2,expectedOutput);
+        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors, data2, expectedOutput);
     }
+
     @Test
-    public void testRemoveByAuthor3(){
+    public void testRemoveByAuthor3() {
         addDatabase1.execute(data2);
         String expectedOutput = "0 books removed for author: nonsense";
         testCommandByAuthors.parseArguments("AUTHOR nonsense");
-        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors,data2,expectedOutput);
+        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors, data2, expectedOutput);
     }
+
     @Test
-    public void testRemoveByAuthor4(){
+    public void testRemoveByAuthor4() {
         addDatabase1.execute(data2);
         String expectedOutput = "0 books removed for author: nonsense";
         testCommandByAuthors.parseArguments("AUTHOR nonsense");
-        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors,data2,expectedOutput);
+        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors, data2, expectedOutput);
     }
+
     @Test
-    public void testRemoveByAuthor5(){
+    public void testRemoveByAuthor5() {
         addDatabase5.execute(data2);
         testCommandByAuthors.execute(data2);
         SearchCmd search = new SearchCmd("HARRY");
-        String expectedOutput="No hits found for search term: HARRY";
-        CommandTestUtils.checkExecuteConsoleOutput(search,data2,expectedOutput);
+        String expectedOutput = "No hits found for search term: HARRY";
+        CommandTestUtils.checkExecuteConsoleOutput(search, data2, expectedOutput);
     }
+
     @Test
-    public void testRemoveByAuthor6CaseSensitive(){
+    public void testRemoveByAuthor6CaseSensitive() {
         addDatabase5.execute(data2);
         testCommandByAuthors.parseArguments("AUTHOR J.k. ROWLING");
         String expectedOutput = "0 books removed for author: J.k. ROWLING";
-        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors,data2,expectedOutput);
+        CommandTestUtils.checkExecuteConsoleOutput(testCommandByAuthors, data2, expectedOutput);
     }
-
 
 
     @Test
@@ -241,5 +260,27 @@ public class RemoveCmdBasicTest extends RemoveCmdTest {
     @Test
     public void testExecuteNotFound() {
         checkEntryNotFound();
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testNullCommand() {
+        RemoveCmd removeCmd = new RemoveCmd("AUTHOR a");
+
+        FieldTestUtils.setPrivateField(removeCmd, removeCmd.getClass(), "command", null);
+        removeCmd.execute(testLibrary);
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testNullValue() throws IllegalAccessException {
+        RemoveCmd removeCmd = new RemoveCmd("AUTHOR a");
+        Field[] a = removeCmd.getClass().getDeclaredFields();
+        for (Field b : a) {
+            if (!java.lang.reflect.Modifier.isStatic(b.getModifiers())) {
+                b.setAccessible(true);
+                b.set(removeCmd, null);
+            }
+
+        }
+        removeCmd.execute(testLibrary);
     }
 }

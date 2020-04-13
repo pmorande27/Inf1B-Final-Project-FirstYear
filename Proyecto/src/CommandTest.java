@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import java.lang.reflect.Field;
+
 import static org.junit.Assert.assertEquals;
 
 public abstract class CommandTest {
@@ -60,5 +62,18 @@ public abstract class CommandTest {
     public void NullLibraryData(){
         LibraryData nullLibrary = null;
         testCommand.execute(nullLibrary);
+    }
+    @Test(expected = NullPointerException.class)
+    public void testNullValue() throws IllegalAccessException {
+
+        Field[] a = testCommand.getClass().getDeclaredFields();
+        for (Field b : a) {
+            if (!java.lang.reflect.Modifier.isStatic(b.getModifiers())) {
+                b.setAccessible(true);
+                b.set(testCommand, null);
+            }
+
+        }
+        testCommand.execute(testLibrary);
     }
 }

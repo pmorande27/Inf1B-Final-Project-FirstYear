@@ -37,6 +37,7 @@ public final class FieldTestUtils {
     public static void setPrivateField(Object setObj, Class<?> type, String fieldName, Object value) {
         checkObjectAndTypeParameters(setObj, type, fieldName);
 
+
         try {
             Field field = type.getDeclaredField(fieldName);
             field.setAccessible(true);

@@ -124,4 +124,6 @@ public class SearchCmdBasicTest extends SearchCmdTest {
         CommandTestUtils.checkExecuteConsoleOutput(search, data, expectedConsoleOutput);
 
     }
+
+
 }

@@ -167,4 +167,5 @@ public class GroupCmdBasicTest extends GroupCmdTest {
         String[] executeStdOutLines =CommandTestUtils.captureExecuteStdOutputLines(testCommand,testLibrary);
         assertEquals( "##",executeStdOutLines[1].split(" ")[0] );
     }
+
 }

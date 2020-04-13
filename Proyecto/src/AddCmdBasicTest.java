@@ -26,23 +26,26 @@ public class AddCmdBasicTest extends CommandTest {
 
         testLibrary = new LibraryData();
         List<BookEntry> bookData = new ArrayList<>();
-        bookData.add(new BookEntry("TitleA", new String[] { "AuthorA" }, 3.2f, "ISBNA", 500));
+        bookData.add(new BookEntry("TitleA", new String[]{"AuthorA"}, 3.2f, "ISBNA", 500));
         FieldTestUtils.setPrivateField(testLibrary, testLibrary.getClass(), "books", bookData);
     }
 
     // ------------------------- parseArguments tests --------------------
     @Parameterized.Parameters
-    public static Object[] parameters(){
-        return new Object[] {"books02.csv","     books02.csv",".csv","            .csv            ","books02.csv              "};
+    public static Object[] parameters() {
+        return new Object[]{"books02.csv", "     books02.csv", ".csv", "            .csv            ", "books02.csv              "};
     }
+
     @Parameterized.Parameter(0)
     public String accepted_value;
 
-    @Test public void testAcceptedValues(){
+    @Test
+    public void testAcceptedValues() {
         System.out.println(accepted_value);
-        boolean result =testCommand.parseArguments(accepted_value);
+        boolean result = testCommand.parseArguments(accepted_value);
         assertTrue(result);
     }
+
     @Test
     public void testParseArgumentsIllegalArgument() {
         String blankArg = "";
@@ -52,37 +55,41 @@ public class AddCmdBasicTest extends CommandTest {
         invalidPath = "this/is/not/a/csv/file.txt";
         CommandTestUtils.checkArgumentInput(testCommand, false, invalidPath);
     }
+
     @Test
-    public void testParseArgumentsSpaces(){
-        String Argument ="      .csv";
+    public void testParseArgumentsSpaces() {
+        String Argument = "      .csv";
         boolean result = testCommand.parseArguments(Argument);
         assertTrue(result);
 
     }
+
     @Test
-    public void testParseArgumentsSpaces2(){
-        String Argument ="      .csv           ";
+    public void testParseArgumentsSpaces2() {
+        String Argument = "      .csv           ";
         boolean result = testCommand.parseArguments(Argument);
         assertTrue(result);
 
     }
-    @Test
-    public void testParseArgumentsSpaces3(){
-        String Argument ="      .c sv";
-        boolean result = testCommand.parseArguments(Argument);
-        assertFalse(result);
 
-    }
     @Test
-    public void testParseArgumentsSpaces4(){
-        String Argument ="      .csv          f ";
+    public void testParseArgumentsSpaces3() {
+        String Argument = "      .c sv";
         boolean result = testCommand.parseArguments(Argument);
         assertFalse(result);
 
     }
 
     @Test
-    public void testAddingBooks(){
+    public void testParseArgumentsSpaces4() {
+        String Argument = "      .csv          f ";
+        boolean result = testCommand.parseArguments(Argument);
+        assertFalse(result);
+
+    }
+
+    @Test
+    public void testAddingBooks() {
         String largeDataSet = "books03.csv";
         LibraryData booksLibrary = new LibraryData();
         testCommand.parseArguments(largeDataSet);
@@ -107,16 +114,16 @@ public class AddCmdBasicTest extends CommandTest {
         assertEquals("Unexpected amount of books in library after loading file.", expectedBookAmount, books.size());
 
         List<Object[]> expectedBookValues = new ArrayList<>();
-        expectedBookValues.add(new Object[] { "TitleA", new String[] { "AuthorA" }, 3.2f, "ISBNA", 500 });
+        expectedBookValues.add(new Object[]{"TitleA", new String[]{"AuthorA"}, 3.2f, "ISBNA", 500});
         expectedBookValues.add(
-                new Object[] { "The Changeling", new String[] { "Zilpha Keatley Snyder" }, 4.17f, "595321801", 228 });
+                new Object[]{"The Changeling", new String[]{"Zilpha Keatley Snyder"}, 4.17f, "595321801", 228});
         expectedBookValues.add(
-                new Object[] { "Animal Farm", new String[] { "George Orwell" }, 3.91f, "452284244", 122 });
+                new Object[]{"Animal Farm", new String[]{"George Orwell"}, 3.91f, "452284244", 122});
 
         for (int i = 0; i < books.size(); i++) {
             BookEntryTestUtils.checkBookFieldValues(books.get(i), BookEntryBasicTest.BOOK_ENTRY_FIELD_NAMES,
                     expectedBookValues.get(i));
         }
     }
-
 }
+
