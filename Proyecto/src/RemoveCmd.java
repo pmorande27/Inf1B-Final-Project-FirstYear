@@ -167,7 +167,7 @@ public class RemoveCmd extends LibraryCommand {
      * @return the array that contains the two words
      */
     private String[] getCommandAndValue(String argumentInput) {
-        Pattern whitespace = Pattern.compile("\\s");
+        Pattern whitespace = Pattern.compile("\\s+");
         Matcher matcher = whitespace.matcher(argumentInput.strip());
         String finalArgument = matcher.replaceAll(" ");
         return finalArgument.split(" ",2);
@@ -186,7 +186,7 @@ public class RemoveCmd extends LibraryCommand {
 
     private boolean checkValidity(String[] twoArguments) {
         if (twoArguments.length == 2 && !twoArguments[1].isBlank()){
-            value = twoArguments[1].strip();
+            value = twoArguments[1];
             return parseCommandOption(twoArguments[0]);
 
         }

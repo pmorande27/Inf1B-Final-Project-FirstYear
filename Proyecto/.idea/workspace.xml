@@ -3,13 +3,74 @@
   <component name="ChangeListManager">
     <list default="true" id="f19f605b-7c99-4eb6-bc8d-4ef628357939" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/AddCmd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/AddCmd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/AddCmdBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/AddCmdBasicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/BookEntry.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/BookEntry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/BookEntryBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/BookEntryBasicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/BookEntryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/BookEntryTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/BookEntryTestUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/BookEntryTestUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/CommandFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/CommandFactory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/CommandInterpreter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/CommandInterpreter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/CommandOptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/CommandOptions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/CommandOptionsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/CommandOptionsList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/CommandTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/CommandTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/CommandTestUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/CommandTestUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/CommandType.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/CommandType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/ExitCmd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/ExitCmd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/FieldTestUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/FieldTestUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/GroupCmd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/GroupCmd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/GroupCmdBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/GroupCmdBasicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/GroupCmdTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/GroupCmdTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/HelpCmd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/HelpCmd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/LibraryBrowser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/LibraryBrowser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/LibraryCommand.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/LibraryCommand.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/LibraryData.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/LibraryData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/LibraryFileLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/LibraryFileLoader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/LibraryFileLoaderBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/LibraryFileLoaderBasicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/LibraryFileLoaderTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/LibraryFileLoaderTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/ListCmd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/ListCmd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/ListCmdBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/ListCmdBasicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/ListCmdTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/ListCmdTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/RemoveCmd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/RemoveCmd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/RemoveCmdBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/RemoveCmdBasicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/RemoveCmdTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/RemoveCmdTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/SearchCmd.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/SearchCmd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/SearchCmdBasicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/SearchCmdBasicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/SearchCmdTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/SearchCmdTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/StdStreamIntercept.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/StdStreamIntercept.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/system-properties.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/system-properties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Doc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Doc/type-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RemoveCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchCmd.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +145,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AddCmdBasicTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommandTest" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="AddCmdBasicTest" />
+        <pattern testClass="GroupCmdBasicTest" />
+        <pattern testClass="ListCmdBasicTest" />
+        <pattern testClass="RemoveCmdBasicTest" />
+        <pattern testClass="SearchCmdBasicTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddCmdBasicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyecto" />
       <option name="PACKAGE_NAME" value="" />
@@ -112,23 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookEntryBasicTest.testNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookEntryBasicTest" />
-      <option name="METHOD_NAME" value="testNullValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AddCmdBasicTest and 4 more" />
         <item itemvalue="JUnit.BookEntryBasicTest" />
         <item itemvalue="JUnit.AddCmdBasicTest" />
         <item itemvalue="JUnit.BookEntryBasicTest.testFinalFields" />
-        <item itemvalue="JUnit.BookEntryBasicTest.testNullValue" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +225,11 @@
       <workItem from="1586614928496" duration="23863000" />
       <workItem from="1586702462011" duration="8017000" />
       <workItem from="1586768436478" duration="14914000" />
+      <workItem from="1586857452236" duration="5097000" />
+      <workItem from="1586964086051" duration="4000" />
+      <workItem from="1586981892020" duration="599000" />
+      <workItem from="1587036653567" duration="1200000" />
+      <workItem from="1587156821066" duration="4000" />
     </task>
     <servers />
   </component>
@@ -181,10 +253,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586363605431" />
-    <state x="707" y="234" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586711735991">
+    <state x="707" y="234" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586877641439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="707" y="234" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1586711735991" />
+    <state x="707" y="234" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1586877641439" />
     <state width="428" height="466" key="DebuggerActiveHint" timestamp="1586276270235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,22 +265,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586516113977" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586806641761">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586902203961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586806641761" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586806641761">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586902203961" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586902203960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586806641761" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586806641761">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586902203960" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586902203960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586806641761" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586806641761">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586902203960" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586902203961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586806641761" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586902203961" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586795374192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -229,10 +301,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586516307074" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586768436357">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587069588754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586768436357" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587069588754" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586710437582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,6 +337,11 @@
           <url>file://$PROJECT_DIR$/src/CommandTest.java</url>
           <line>6</line>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/CommandTest.java</url>
